@@ -1,0 +1,98 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.CreateSurveyModal {
+  padding: 20px;
+  background: $GALLERY;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.CreateSurveyModal_throbber {
+  width: 100px;
+  margin: 50px auto 150px;
+}
+
+.CreateSurveyModal_apiError {
+  margin: 50px auto 150px;
+  text-align: center;
+}
+
+.CreateSurveyModal_errorBtn {
+  @include FormButton;
+  background: $CURIOUS_BLUE;
+}
+
+.CreateSurveyModal_fieldWrapper {
+  padding: 0;
+  border-bottom: solid 1px $SILVER;
+  width: 100%;
+}
+
+.CreateSurveyModal_label {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  display: block;
+  font-size: 1rem;
+  color: $SCORPION;
+}
+
+.CreateSurveyModal_error {
+  min-height: 20px;
+  margin: 0;
+  padding: 0;
+  color: $AMARANTH;
+  font-size: 0.8rem;
+}
+
+.CreateSurveyModal_fieldInput {
+  width: 100%;
+  display: block;
+}
+
+.CreateSurveyModal_fieldAddl {
+  padding: 10px 0;
+  display: block;
+  font-size: 0.8rem;
+  color: $BOULDER;
+}
+
+/* --- */
+
+.CreateSurveyModal_nextAction {
+  margin-top: 20px;
+}
+
+.CreateSurveyModal_buildNext,
+.CreateSurveyModal_promoteNext {
+  margin-top: 10px;
+  width: 50%;
+  padding: 0 10px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  color: $SCORPION;
+}
+
+.CreateSurveyModal_nextBtn {
+  padding: 10px 25px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.CreateSurveyModal_nextBtnIcon {
+  width: 16px;
+  height: 16px;
+  fill: #FFF;
+  vertical-align: text-top;
+  margin-left: 5px;
+}
+
+.CreateSurveyModal_nextText {
+  margin-top: 20px;
+  padding: 0 22px;
+  font-weight: 300;
+}

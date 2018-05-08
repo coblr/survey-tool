@@ -1,0 +1,75 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.PromoteMobile {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.PromoteMobile_titleBar {
+  margin-bottom: 10px;
+}
+
+.PromoteMobile_titleIcon {
+  width: 18px;
+  height: 18px;
+  fill: $AMARANTH;
+  display: inline-block;
+}
+
+.PromoteMobile_title {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 0 10px;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.PromoteMobile_content {
+  margin-bottom: 40px;
+  padding: 40px;
+  color: $SCORPION;
+  background: #FFF;
+  border: solid 1px $SILVER;
+}
+
+.PromoteMobile_headline {
+  font-weight: 900;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.PromoteMobile_description {
+
+}
+
+.PromoteMobile_list {
+
+}
+
+.PromoteMobile_listItem {
+  margin-bottom: 10px;
+}
+
+.PromoteMobile_bullet {
+  font-weight: 700;
+  display: block;
+}
+
+.PromoteMobile_image {
+  float: right;
+}
+
+.PromoteMobile_formTitle {
+  margin: 0 0 10px;
+  padding: 0;
+  font-weight: 900;
+  text-align: center;
+}
+
+.PromoteMobile_instruction {
+  text-align: center;
+}

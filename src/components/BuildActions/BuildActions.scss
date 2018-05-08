@@ -1,0 +1,7 @@
+.BuildActions {
+  width: 150px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}

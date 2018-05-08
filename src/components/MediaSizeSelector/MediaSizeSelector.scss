@@ -1,0 +1,26 @@
+@import '../../styles/_colors';
+@import '../../styles/typography';
+
+.MediaSizeSelector {
+
+}
+
+.MediaSizeSelector_sizeBtn {
+  margin: 0;
+  padding: 5px 10px;
+  background: $SILVER;
+  color: #FFF;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $PISTACHIO;
+  }
+}
+.MediaSizeSelector_sizeBtn--selected {
+  background: $CURIOUS_BLUE;
+
+  &:hover {
+    background: $PISTACHIO;
+  }
+}

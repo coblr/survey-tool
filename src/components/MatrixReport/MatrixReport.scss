@@ -1,0 +1,114 @@
+@import '../../styles/_colors';
+
+.MatrixReport {
+  padding: 0;
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.MatrixReport[style] {
+  visibility: visible !important;
+}
+
+.MatrixReport_table {
+  border: solid 1px $GALLERY;
+  width: 100%;
+
+  & thead {
+    border-bottom: solid 1px $ALTO;
+    background: $GALLERY;
+  }
+
+  & tfoot {
+    border-top: solid 1px $ALTO;
+    background: $GALLERY;
+  }
+
+  & tr {
+    border-bottom: solid 1px $ALTO;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  & th, & td {
+    padding: 5px 10px;
+    border-right: solid 1px $ALTO;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  & th {
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+
+  & td {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $SCORPION;
+    position: relative;
+    z-index: 0;
+  }
+}
+
+/* --- */
+
+.MatrixReport_responseBg {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $PISTACHIO;
+  z-index: -1;
+}
+
+.MatrixReport_responseCount,
+.MatrixReport_responsePercent {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  z-index: 1;
+}
+
+/* --- */
+
+.MatrixReport_optionCol {
+  text-align: left;
+}
+
+.MatrixReport_responseCol {
+  width: 60px;
+  text-align: center;
+}
+
+.MatrixReport_totalCol {
+  width: 50px;
+  text-align: center;
+}
+
+/* --- */
+
+.MatrixReport_totalLabelCol {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.MatrixReport_respondentTotal {
+  margin-right: 10px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.MatrixReport_totalCol {
+  text-align: center;
+}
+

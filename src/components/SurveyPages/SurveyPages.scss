@@ -1,0 +1,22 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.SurveyPages {
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyPages_actions {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.SurveyPages_pages {
+  width: 80%;
+  display: inline-block;
+  vertical-align: top;
+}

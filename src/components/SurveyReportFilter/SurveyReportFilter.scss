@@ -1,0 +1,56 @@
+@import '../../styles/_colors';
+
+.SurveyReportFilter {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyReportFilter_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $SCORPION;
+  font-size: 0.8rem;
+}
+
+.SurveyReportFilter_titleIcon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: $CURIOUS_BLUE;
+}
+
+.SurveyReportFilter_editBtn {
+  font-size: 0.7rem;
+  color: $CURIOUS_BLUE;
+  background: none;
+  border: none;
+  font-weight: 400;
+}
+
+.SurveyReportFilter_filterSettings {
+  font-size: 0.75rem;
+  margin-top: 7px;
+}
+
+.SurveyReportFilter_settingRow {
+  width: 250px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+
+.SurveyReportFilter_label {
+  color: $DUSTY_GRAY;
+  margin-right: 5px;
+}
+
+.SurveyReportFilter_setting {
+  color: $SCORPION;
+  text-transform: capitalize;
+}

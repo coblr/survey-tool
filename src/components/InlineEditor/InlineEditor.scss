@@ -1,0 +1,77 @@
+@import '../../styles/_colors';
+
+.InlineEditor {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.InlineEditor_origValue {
+  word-wrap: break-word;
+}
+
+.InlineEditor_toggle {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: $DUSTY_GRAY;
+}
+
+.InlineEditor_toggleIcon {
+  fill: $DUSTY_GRAY;
+  width: 14px;
+  height: 14px;
+  transition: fill 0.2s;
+
+  &:hover {
+    fill: $CURIOUS_BLUE;
+  }
+}
+
+.InlineEditor_editor {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.InlineEditor_error {
+  display: block;
+  width: 100%;
+  font-size: 0.7rem;
+  color: $AMARANTH;
+  margin: 0 0 2px;
+  padding: 0;
+  font-family: 'EnzoOT-Medi';
+}
+
+.InlineEditor_input {
+  border: solid 1px $SILVER;
+  font-weight: 300;
+  vertical-align: top;
+  outline: none;
+  width: 100%;
+  color: $SCORPION;
+  padding: 2px;
+
+  ::placeholder,
+  &::-webkit-input-placeholder,
+  &::-ms-input-placeholder {
+    color: $SILVER;
+  }
+}
+
+.InlineEditor_throbber {
+  width: 32px;
+  height: 32px;
+  /*position: absolute;*/
+
+  & .Throbber_icon {
+    width: 30px;
+    height: 30px;
+  }
+}

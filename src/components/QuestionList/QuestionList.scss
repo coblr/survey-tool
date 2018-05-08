@@ -1,0 +1,19 @@
+@import '../../styles/_colors';
+
+.QuestionList {
+
+}
+
+.QuestionList_question {
+  background: #FFF;
+}
+
+.QuestionList_question--creating,
+.QuestionList_question--updating,
+.QuestionList_question--deleting {
+  border: solid 1px $SILVER;
+}
+
+.QuestionList_throbber {
+  margin: 40px auto;
+}

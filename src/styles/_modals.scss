@@ -1,0 +1,38 @@
+.modal-header {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: $SCORPION;
+  border: none;
+  position: relative;
+  width: 100%;
+  display: block;
+
+  .svg-icon {
+    fill: $CURIOUS_BLUE;
+    width: 18px;
+    height: 18px;
+    margin-top: -3px;
+  }
+
+  .actions {
+    position: absolute;
+    top: 0;
+    right: 10px;
+
+    .svg-icon {
+      width: 0.9rem;
+      height: 0.9rem;
+    }
+  }
+}
+
+.modal-body {
+  background: $GALLERY;
+}
+
+.modal-footer {
+  border: none;
+}

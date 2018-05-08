@@ -1,0 +1,44 @@
+@import '../../styles/_colors';
+
+.MatrixPreview {
+  padding: 0;
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.MatrixPreview_table {
+  border: solid 1px $GALLERY;
+  width: 100%;
+}
+
+.MatrixPreview_tableCell,
+.MatrixPreview_columnCell,
+.MatrixPreview_rowCell {
+  padding: 10px;
+  border: solid 1px $GALLERY;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.MatrixPreview_rowCell {
+  text-align: left;
+}
+
+.MatrixPreview_rowTag {
+  display: inline-block;
+  margin-left: 10px;
+  color: $DUSTY_GRAY;
+
+  &:not(:first-child){
+    margin-left: 5px;
+  }
+}
+
+.MatrixPreview_colTag {
+  display: block;
+  color: $DUSTY_GRAY;
+}

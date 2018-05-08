@@ -1,0 +1,55 @@
+@import '../../styles/_colors';
+
+.SurveySummary {
+  display: table;
+  width: 100%;
+  border-bottom: solid 1px $ALTO;
+  position: relative;
+  transition: all 0.2s;
+  opacity: 1;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveySummary--hide {
+  opacity: 0.5;
+}
+
+.SurveySummary_loading {
+  position: absolute;
+  top: 82px;
+  left: 290px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.5rem;
+  color: $CURIOUS_BLUE;
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+.SurveySummary_loading--show {
+  opacity: 1;
+}
+
+.SurveySummary_throbber {
+  & .Throbber_icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.SurveySummary_metrics,
+.SurveySummary_chart {
+  display: table-cell;
+}
+
+.SurveySummary_metrics {
+  width: 100px;
+  border-right: solid 1px $ALTO;
+}
+
+.SurveySummary_chart {
+  padding: 20px;
+}

@@ -1,0 +1,94 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.SurveyResponses {
+  border: solid 1px $SILVER;
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyResponses_head {
+  background: $GALLERY;
+  color: $SCORPION;
+  border-bottom: solid 1px $ALTO;
+
+  & th {
+    padding: 10px;
+    font-weight: 300;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+.SurveyResponses_body {
+  background: #FFF;
+  color: $SCORPION;
+
+  & td {
+    padding: 5px 10px;
+    text-align: center;
+    transition: all 0.2s;
+    position: relative;
+  }
+}
+
+.SurveyResponses_row {
+  border-bottom: solid 1px $ALTO;
+  font-size: 0.8rem;
+  font-weight: 300;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.SurveyResponses_row--excluded {
+  & td {
+    background: $ALABASTER;
+    color: $SILVER;
+  }
+}
+
+.SurveyResponses_foot {
+  background: $GALLERY;
+
+  & td {
+    padding: 5px 10px;
+    text-align: right;
+  }
+}
+
+.SurveyResponses_viewIcon {
+  width: 14px;
+  height: 14px;
+  fill: $CURIOUS_BLUE;
+  vertical-align: middle;
+}
+
+.SurveyResponses_deleteCol {
+  position: relative;
+}
+
+.SurveyResponses_deleteBtn {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.SurveyResponses_deleteIcon {
+  width: 14px;
+  height: 14px;
+  fill: $AMARANTH;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.SurveyResponses_deleteAlert {
+  top: -25px;
+  right: 60px;
+  width: 250px;
+}

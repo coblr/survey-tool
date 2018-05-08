@@ -1,0 +1,65 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.Paginator {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.Paginator_prevBtn,
+.Paginator_nextBtn {
+  @include LinkButton;
+  display: inline-block;
+}
+
+.Paginator_prevBtn--disabled,
+.Paginator_nextBtn--disabled {
+  color: $DUSTY_GRAY;
+
+  &:hover {
+    color: $DUSTY_GRAY;
+    cursor: not-allowed;
+  }
+
+  & .Paginator_icon {
+    fill: $DUSTY_GRAY;
+
+    &:hover {
+      fill: $DUSTY_GRAY;
+    }
+  }
+}
+
+.Paginator_prevBtn {
+  margin-right: 10px;
+}
+
+.Paginator_nextBtn {
+  margin-left: 10px;
+}
+
+.Paginator_icon {
+  width: 20px;
+  height: 20px;
+  fill: $CURIOUS_BLUE;
+  vertical-align: middle;
+  padding: 4px;
+
+  &:hover {
+    fill: $AMARANTH;
+  }
+}
+
+.Paginator_page {
+  @include LinkButton;
+  display: inline-block;
+  margin: 0 2px;
+  padding: 2px 5px;
+}
+
+.Paginator_page--selected {
+  background: $ALTO;
+}

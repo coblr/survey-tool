@@ -1,0 +1,39 @@
+@import '../../styles/_colors';
+
+.QuestionActionNav {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px $SILVER;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.QuestionActionNav_item {
+  color: $BOULDER;
+  width: 100%;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+
+  &:hover {
+    color: $CURIOUS_BLUE;
+    cursor: pointer;
+
+    /* it's just so easy to do.. */
+    .BuildActionsNav_itemIcon {
+      fill: $CURIOUS_BLUE;
+    }
+  }
+}
+
+.QuestionActionNav_itemIcon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: $BOULDER;
+}

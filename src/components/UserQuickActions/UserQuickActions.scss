@@ -1,0 +1,84 @@
+@import '../../styles/_colors';
+
+.UserQuickActions {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  z-index: 100;
+
+  &[style] {
+    visibility: visible !important;
+  }
+
+  &:hover {
+    .UserQuickActions_menuWrapper {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.UserQuickActions_toggle {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+
+.UserQuickActions_menuWrapper {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  transition: all 0.2s;
+  padding: 0;
+  max-width: 200px;
+  min-width: 100px;
+  opacity: 0;
+  visibility: hidden;
+  background: $BOULDER;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  &:before {
+    content: '';
+    border: none;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    border-top-color: $BOULDER;
+    border-left-color: $BOULDER;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 75%;
+    transform: rotate(45deg);
+    z-index: 10;
+  }
+}
+
+.UserQuickActions_menu {
+  width: 100%;
+  height: auto;
+}
+
+.UserQuickActions_menuItem {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 0.8rem;
+  color: #FFF;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+  }
+}
+
+.UserQuickActions_menuLink {
+  color: #FFF;
+
+  &:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+}

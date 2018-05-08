@@ -1,0 +1,7 @@
+export default {
+  QUESTION_IMAGE_ENABLED: true,
+  FILTERED_CSV_ENABLED: true,
+  SURVEY_MGMT_ENABLED: true,
+  REPORT_MGMT_ENABLED: true,
+  SOURCE_MGMT_ENABLED: true
+};

@@ -1,0 +1,22 @@
+@import '../../styles/_colors';
+
+.QuestionDivider {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+.QuestionDivider_insertBtn {
+  border: none;
+  background: none;
+  font-size: 0.7rem;
+  color: #777777;
+}
+
+.QuestionDivider_insertIcon {
+  width: 8px;
+  height: 8px;
+  fill: #575757;
+  vertical-align: baseline;
+  margin-right: 5px;
+}

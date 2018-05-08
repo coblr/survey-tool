@@ -1,0 +1,127 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.AudienceDashboard {
+  margin-top: 40px;
+  border: solid 1px $SILVER;
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+/* --- */
+
+.AudienceDashboard_colHeadRow {
+  background: $SCORPION;
+}
+
+.AudienceDashboard_colHeadCell {
+  color: #FFF;
+  font-weight: 300;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  text-align: center;
+  letter-spacing: 0.02rem;
+}
+
+.AudienceDashboard_colHeadIcon {
+  width: 14px;
+  height: 14px;
+  fill: #FFF;
+}
+
+.AudienceDashboard_refreshBtn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* --- */
+
+.AudienceDashboard_bodyRow {
+  background: #FFF;
+}
+
+.AudienceDashboard_bodyRowIcon {
+  width: 16px;
+  height: 16px;
+  fill: $CURIOUS_BLUE;
+}
+
+.AudienceDashboard_throbber {
+  display: inline-block;
+  vertical-align: middle;
+
+  .Throbber_icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.AudienceDashboard_cell {
+  padding: 10px;
+  color: $SCORPION;
+  text-align: center;
+  position: relative;
+}
+
+.AudienceDashboard_cell--leftAlign {
+  text-align: left;
+}
+
+.AudienceDashboard_cell--largeText {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.AudienceDashboard_cell--redText {
+  color: $AMARANTH;
+}
+
+.AudienceDashboard_cell--loading {
+  color: $CURIOUS_BLUE;
+  text-align: left;
+}
+
+/* --- */
+
+.AudienceDashboard_activeDot {
+  width: 8px;
+  height: 8px;
+  fill: $GALLERY;
+  margin-right: 5px;
+}
+
+.AudienceDashboard_activeDot--notStarted {
+  fill: $CURIOUS_BLUE;
+}
+.AudienceDashboard_activeDot--suspended {
+  fill: $AMARANTH;
+}
+.AudienceDashboard_activeDot--active {
+  fill: $PISTACHIO;
+}
+.AudienceDashboard_activeDot--closed {
+  fill: #000;
+}
+
+.AudienceDashboard_rowIcon {
+  width: 24px;
+  height: 24px;
+  fill: $CURIOUS_BLUE;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.AudienceDashboard_editBtn {
+  @include LinkButton;
+}
+
+.AudienceDashboard_editIcon {
+  width: 24px;
+  height: 24px;
+  fill: $CURIOUS_BLUE;
+}

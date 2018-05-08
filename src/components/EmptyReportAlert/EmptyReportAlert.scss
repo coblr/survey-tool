@@ -1,0 +1,20 @@
+@import '../../styles/_colors';
+
+.EmptyReportAlert {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.EmptyReportAlert_icon {
+  display: block;
+  margin: 20px auto 0;
+  width: 50px;
+  height: 50px;
+  fill: $CURIOUS_BLUE;
+}

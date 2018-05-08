@@ -1,0 +1,45 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.PromoteSample {
+  background: $GALLERY;
+  padding: 20px 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.PromoteSample_selfServeIcon {
+  width: 150px;
+  height: 52px;
+  margin-bottom: 30px;
+}
+
+.PromoteSample_selfServeTitle {
+  margin: 0 0 30px;
+  font-size: 1.1rem;
+  font-family: 'EnzoOT-Light', Sans-serif;
+  text-align: center;
+}
+
+.PromoteSample_selfServeBtn {
+  @include FormButton;
+  margin: 0 auto;
+  background: $CURIOUS_BLUE;
+  padding: 20px;
+  display: block;
+  width: 170px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background: $PISTACHIO;
+    color: #FFF;
+  }
+
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: #FFF;
+  }
+}

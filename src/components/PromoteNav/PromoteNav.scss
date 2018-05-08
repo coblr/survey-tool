@@ -1,0 +1,70 @@
+@import '../../styles/_colors';
+
+.PromoteNav {
+  margin-top: 30px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.PromoteNav_item {
+  padding: 20px;
+  width: calc(100% / 3);
+  font-size: 1.3rem;
+  color: $CURIOUS_BLUE;
+  display: inline-block;
+  border: solid 1px $SILVER;
+  border-left: none;
+  text-decoration: none;
+  text-align: center;
+
+  &:first-child {
+    border-left: solid 1px $SILVER;
+  }
+
+  &:hover {
+    color: $PISTACHIO;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: $CURIOUS_BLUE;
+    text-decoration: none;
+  }
+}
+
+.PromoteNav_item--selected {
+  background: $GALLERY;
+  border-bottom-color: $GALLERY;
+}
+
+.PromoteNav_item--halfWidth {
+  width: calc(100% / 2);
+}
+
+.PromoteNav_text {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: $SCORPION;
+}
+
+.PromoteNav_img {
+  width: 200px;
+  height: 140px;
+  margin: 20px auto;
+  background: url('/assets/promoteIcons.png') 0 0 no-repeat;
+}
+
+.PromoteNav_img--invite {
+  background-position: center 0;
+}
+
+.PromoteNav_img--online,
+.PromoteNav_img--sample {
+  background-position: center -194px;
+}
+
+.PromoteNav_img--mobile {
+  background-position: center -400px;
+}

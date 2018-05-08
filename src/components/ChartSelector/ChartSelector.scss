@@ -1,0 +1,88 @@
+@import '../../styles/_colors';
+
+.ChartSelector {
+  position: relative;
+  display: inline-block;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ChartSelector_toggle {
+
+}
+
+.ChartSelector_flyout {
+  position: absolute;
+  top: -1000px;
+  right: 10px;
+  background: #FFF;
+  color: $SCORPION;
+  z-index: 500;
+  opacity: 0;
+  width: 215px;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: top 0s, opacity 0.2s;
+  visibility: hidden;
+
+  &:before {
+    content: '';
+    display: block;
+    border: solid 6px #FFF;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5px;
+    right: 10px;
+  }
+}
+
+.ChartSelector_flyout--open {
+  top: calc(100% + 5px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.ChartSelector_menu {
+
+}
+
+.ChartSelector_selectBtn {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.7rem;
+  color: $BOULDER;
+  padding: 10px;
+  background: none;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $POLAR;
+  }
+}
+
+.ChartSelector_selectBtn--selected {
+  color: #FFF;
+  background: $CURIOUS_BLUE;
+
+  .ChartSelector_selectIcon {
+    fill: #FFF;
+  }
+
+  &:hover {
+    background: lighten($CURIOUS_BLUE, 10);
+  }
+}
+
+.ChartSelector_selectIcon {
+  width: 48px;
+  height: 48px;
+  fill: $BOULDER;
+  display: block;
+  margin-bottom: 5px;
+  transition: all 0.2s;
+}

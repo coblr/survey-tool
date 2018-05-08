@@ -1,0 +1,60 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.CopySurveyModal {
+  padding: 20px;
+  background: $GALLERY;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.CopySurveyModal_throbber {
+  width: 100px;
+  margin: 50px auto 150px;
+}
+
+.CopySurveyModal_apiError {
+  margin: 50px auto 100px;
+  text-align: center;
+}
+
+.CopySurveyModal_errorBtn {
+  @include FormButton;
+  background: $CURIOUS_BLUE;
+}
+
+.CopySurveyModal_fieldWrapper {
+  padding: 0;
+  width: 100%;
+}
+
+.CopySurveyModal_label {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  display: block;
+  font-size: 1rem;
+  color: $SCORPION;
+}
+
+.CopySurveyModal_error {
+  min-height: 20px;
+  margin: 0;
+  padding: 0;
+  color: $AMARANTH;
+  font-size: 0.8rem;
+}
+
+.CopySurveyModal_input {
+  width: 100%;
+  display: block;
+}
+
+.CopySurveyModal_fieldAddl {
+  padding: 10px 0;
+  display: block;
+  font-size: 0.8rem;
+  color: $BOULDER;
+}

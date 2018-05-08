@@ -1,0 +1,83 @@
+@import '../../styles/_colors';
+
+.SurveySummaryControls {
+  text-align: center;
+  position: relative;
+  font-weight: 200;
+  margin: 0 0 10px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveySummaryControls_timeNav {
+
+}
+
+.SurveySummaryControls_currentUnit {
+  margin: 0 10px;
+  color: #000;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.SurveySummaryControls_timeNavBtn {
+  padding: 0;
+  border: none;
+  background: none;
+  color: $CURIOUS_BLUE;
+  display: inline-block;
+
+  &:hover {
+    cursor: pointer;
+    color: $PISTACHIO;
+  }
+}
+
+.SurveySummaryControls_timeNavIcon {
+  width: 15px;
+  height: 15px;
+  fill: $DUSTY_GRAY;
+  transition: fill 0.2s;
+  vertical-align: text-top;
+
+  &:hover {
+    cursor: pointer;
+    fill: $CURIOUS_BLUE;
+  }
+}
+
+/* --- */
+
+.SurveySummaryControls_scaleNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.SurveySummaryControls_scaleNavBtn {
+  margin: 0 0 0 10px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.SurveySummaryControls_scaleNavBtn--selected {
+  .SurveySummaryControls_timeScaleIcon {
+    fill: $CURIOUS_BLUE;
+  }
+}
+
+.SurveySummaryControls_scaleNavIcon {
+  width: 15px;
+  height: 15px;
+  fill: $DUSTY_GRAY;
+  transition: fill 0.2s;
+  vertical-align: text-top;
+
+  &:hover {
+    cursor: pointer;
+    fill: #000;
+  }
+}

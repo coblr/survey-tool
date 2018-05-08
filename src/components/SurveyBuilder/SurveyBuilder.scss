@@ -1,0 +1,52 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.SurveyBuilder {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyBuilder[style] {
+  visibility: visible !important;
+}
+
+.SurveyBuilder_notAuthorized {
+  margin: 40px 0 0;
+  text-align: center;
+}
+
+.SurveyBuilder_notAuthorizedIcon {
+  margin: 40px auto 0;
+  width: 50px;
+  height: 50px;
+  fill: $AMARANTH;
+}
+
+.SurveyBuilder_lockMessage {
+  border: solid 1px $SILVER;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  color: $BOULDER;
+}
+
+.SurveyBuilder_copyBtn {
+  @include LinkButton
+
+  &:hover {
+    cursor: pointer;
+
+    .PageEditor_copyIcon {
+      fill: $AMARANTH;
+    }
+  }
+}
+
+.SurveyBuilder_copyIcon {
+  width: 16px;
+  height: 16px;
+  fill: $CURIOUS_BLUE;
+}

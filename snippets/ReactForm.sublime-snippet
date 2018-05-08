@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+import React from 'react';
+import {Field, reduxForm} from 'redux-form';
+
+import './${1:ComponentName}.component.css';
+
+export class ${1:ComponentName} extends React.PureComponent {
+  render(){
+    const {handleSubmit} = this.props;
+    return (
+      <form
+        name="${2:formName}"
+        className="${1:ComponentName}"
+        onSubmit={handleSubmit}
+        method="POST">
+        $0
+      </form>
+    )
+  }
+}
+
+${1:ComponentName}.propTypes = {
+  handleSubmit: React.PropTypes.func
+};
+
+export default reduxForm({
+  form: '${2:formName}'
+})(${1:ComponentName});
+]]></content>
+<tabTrigger>ReactForm</tabTrigger>
+<description>Creates a React form component.</description>
+</snippet>

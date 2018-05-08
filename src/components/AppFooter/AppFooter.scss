@@ -1,0 +1,46 @@
+@import '../../styles/_colors';
+
+.AppFooter {
+  background: $SCORPION;
+  color: $DUSTY_GRAY;
+  font-weight: 300;
+  font-size: 0.8rem;
+  height: 75px;
+  padding-top: 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.AppFooter_leftCol {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+}
+
+.AppFooter_rightCol {
+  text-align: right;
+  display: inline-block;
+  width: 90%;
+  padding: 10px 20px;
+}
+
+.AppFooter_logo {
+  margin-right: 10px;
+  width: 100px;
+  height: 35px;
+  fill: $SSI_RED;
+}
+
+.AppFooter_link {
+  margin-right: 10px;
+  color: $DUSTY_GRAY;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $GALLERY;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

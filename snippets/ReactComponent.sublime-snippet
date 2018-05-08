@@ -1,0 +1,23 @@
+<snippet>
+<content><![CDATA[
+import React from 'react';
+
+import './${1:ComponentName}.css';
+
+export class ${1:ComponentName} extends React.PureComponent {
+	render(){
+		return (<div className="${1:ComponentName}">
+			Rendering ${1:ComponentName}
+		</div>)
+	}
+}
+
+${1:ComponentName}.propTypes = {$0};
+
+export default ${1:ComponentName};
+]]></content>
+<tabTrigger>ReactComponent</tabTrigger>
+<description>
+	Creates a React presentation ('dumb') component.
+</description>
+</snippet>

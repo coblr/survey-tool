@@ -1,0 +1,85 @@
+@import '../../styles/_colors';
+
+.ReportFilterModal {
+  border-top: solid 1px $SILVER;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ReportFilterModal_filterSection {
+  border-bottom: solid 1px $SILVER;
+}
+
+.ReportFilterModal_sectionHeader {
+  padding: 10px;
+  background: $GALLERY;
+  font-weight: 300;
+  color: $SCORPION;
+  font-size: 1.1rem;
+}
+
+.ReportFilterModal_headerIcon {
+  width: 14px;
+  height: 14px;
+  fill: $SCORPION;
+  vertical-align: baseline;
+  margin-right: 10px;
+}
+
+.ReportFilterModal_sectionBody {
+  background: $POLAR;
+  padding: 0 20px;
+  max-height: 0;
+  transition: all 0.2s;
+  display: none;
+  color: $SCORPION;
+  font-size: 0.85rem;
+  position: relative;
+}
+
+.ReportFilterModal_field {
+
+}
+
+.ReportFilterModal_label {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.ReportFilterModal_checkboxLabel {
+  font-weight: normal;
+}
+
+.ReportFilterModal_checkbox {
+  margin-right: 10px !important; /* override bootstrap */
+  display: inline-block;
+}
+
+.ReportFilterModal_input {
+
+}
+
+.ReportFilterModal_datetime {
+
+}
+
+/* --- */
+
+.ReportFilterModal_filterSection--selected {
+  .ReportFilterModal_sectionHeader {
+    background: $SCORPION;
+    color: #FFF;
+  }
+
+  .ReportFilterModal_headerIcon {
+    fill: #FFF;
+  }
+
+  .ReportFilterModal_sectionBody {
+    padding: 20px;
+    max-height: 1000px;
+    display: block;
+  }
+}

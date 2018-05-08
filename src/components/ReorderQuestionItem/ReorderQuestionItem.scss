@@ -1,0 +1,58 @@
+@import '../../styles/_colors';
+
+.ReorderQuestionItem {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ReorderQuestionItem_handle {
+  border-top: solid 1px $ALTO;
+  background: $ALABASTER;
+  padding: 5px 10px 5px 30px;
+  font-weight: 400;
+  position: relative;
+}
+
+.ReorderQuestionItem_actions {
+  float: right;
+  display: inline-block;
+}
+
+.ReorderQuestionItem_deleteAlert {
+  top: -5px;
+  right: 35px;
+  width: 260px;
+}
+
+.ReorderQuestionItem_dragIcon {
+  width: 13px;
+  height: 13px;
+  vertical-align: baseline;
+  margin-right: 5px;
+  fill: $BOULDER;
+}
+
+.ReorderQuestionItem_pageIcon {
+  width: 18px;
+  height: 18px;
+  vertical-align: top;
+  margin-right: 5px;
+  fill: $BOULDER;
+}
+
+.ReorderQuestionItem_deleteBtn {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ReorderQuestionItem_deleteIcon {
+  width: 11px;
+  height: 11px;
+  vertical-align: baseline;
+  fill: $SCORPION;
+}

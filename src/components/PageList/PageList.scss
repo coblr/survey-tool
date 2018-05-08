@@ -1,0 +1,36 @@
+@import '../../styles/_colors';
+
+.PageList {
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.PageList_page {
+  background: $GALLERY;
+  border: solid 1px transparent;
+  padding: 10px;
+  transition: all 0.2s;
+}
+
+/* creating has more margin because divider isn't displaying */
+.PageList_page--creating {
+  margin: 20px 0;
+  background: #FFF;
+  border-color: $SILVER;
+}
+
+.PageList_page--deleting {
+  margin-bottom: 20px;
+  background: #FFF;
+  border-color: $SILVER;
+}
+
+.PageList_page--locked {
+  margin-bottom: 20px;
+}
+
+.PageList_throbber {
+  margin: 40px auto;
+}

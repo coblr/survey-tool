@@ -1,0 +1,65 @@
+@import '../../styles/_colors';
+
+.AppSubHeader {
+  background: #FFF;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.AppSubHeader_container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.AppSubHeader_icon {
+  fill: $AMARANTH;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+}
+
+.AppSubHeader_titleWrapper {
+  width: 70%;
+  text-align: left;
+  display: inline-block;
+}
+
+.AppSubHeader_title {
+  margin: 0 0 0 20px;
+  padding: 0;
+  font-family: 'EnzoOT-Light', Sans-serif;
+  font-size: 2rem;
+  display: inline-block;
+  word-wrap: break-word;
+  width: 85%;
+  vertical-align: middle;
+}
+
+.AppSubHeader_actionWrapper {
+  width: 30%;
+  text-align: right;
+  display: inline-block;
+}
+
+.AppSubHeader_actionBtn {
+  border: none;
+  background: $CURIOUS_BLUE;
+  text-transform: uppercase;
+  color: #FFF;
+  font-weight: 100;
+  padding: 10px 20px;
+  width: 140px;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.AppSubHeader_actionBtnIcon {
+  display: block;
+  margin: 0 auto 5px;
+  width: 18px;
+  height: 18px;
+  fill: #FFF;
+}

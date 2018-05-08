@@ -1,0 +1,49 @@
+@import '../../styles/_colors';
+
+.KeywordFilter {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.KeywordFilter_inputWrapper {
+  background: #FFF;
+  border: solid 1px $SILVER;
+  width: 100%;
+  padding-left: 5px;
+}
+
+.KeywordFilter_inputIcon {
+  width: 18px;
+  height: 18px;
+  fill: $CURIOUS_BLUE;
+  vertical-align: middle;
+}
+
+.KeywordFilter_input {
+  padding: 5px;
+  border: none;
+  width: calc(100% - 40px);
+  outline: none;
+}
+
+.KeywordFilter_clearBtn {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.KeywordFilter_clearIcon {
+  width: 10px;
+  height: 10px;
+  fill: $BOULDER;
+  margin-left: 5px;
+  transition: fill 0.2s;
+
+  &:hover {
+    fill: $CURIOUS_BLUE;
+  }
+}

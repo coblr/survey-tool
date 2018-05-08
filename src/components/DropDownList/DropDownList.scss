@@ -1,0 +1,35 @@
+@import '../../styles/_colors';
+
+.DropDownList {
+  margin: 20px;
+  border: solid 1px $ALTO;
+  max-width: 300px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.DropDownList_header {
+  background: $ALABASTER;
+  color: $SILVER;
+  padding: 5px 10px;
+  border-bottom: solid 1px $ALTO;
+}
+
+.DropDownList_answers {
+  margin: 10px 20px 10px 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.DropDownList_answerItem {
+  display: block;
+  margin: 10px 0;
+}
+
+.DropDownList_anchorTag {
+  display: inline-block;
+  margin-left: 10px;
+  color: $DUSTY_GRAY;
+}

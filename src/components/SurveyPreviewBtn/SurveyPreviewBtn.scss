@@ -1,0 +1,23 @@
+@import '../../styles/_colors';
+
+.SurveyPreviewBtn {
+  background: $CURIOUS_BLUE;
+  padding: 8px;
+  font-weight: 200;
+  color: #FFF;
+  border: none;
+  width: 100%;
+  text-align: center;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyPreviewBtn_icon {
+  width: 16px;
+  height: 16px;
+  fill: #FFF;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}

@@ -1,0 +1,5 @@
+/dist
+/build
+/snippets
+/node_modules
+**/*.json

@@ -1,0 +1,29 @@
+@import '../../styles/_colors';
+
+.DownloadReportModal {
+  padding: 20px 30px;
+  color: $SCORPION;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.DownloadReportModal_header {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.DownloadReportModal_param {
+  margin-bottom: 5px;
+}
+
+.DownloadReportModal_cbx {
+  margin-right: 10px !important;
+}
+
+.DownloadReportModal_label {
+  font-size: 0.9rem;
+  font-weight: 300;
+}

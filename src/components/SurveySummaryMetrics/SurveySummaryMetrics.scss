@@ -1,0 +1,67 @@
+@import '../../styles/_colors';
+
+.SurveySummaryMetrics {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveySummaryMetrics_metricTile {
+  width: 100%;
+  padding: 20px;
+  border-bottom: solid 1px $ALTO;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.SurveySummaryMetrics_metricTile--small {
+  padding: 10px;
+}
+
+.SurveySummaryMetrics_metricLabel,
+.SurveySummaryMetrics_metric {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.SurveySummaryMetrics_metricLabel {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'EnzoOT-Light', Sans-serif;
+  color: $BOULDER;
+}
+.SurveySummaryMetrics_metricLabel--small {
+  font-size: 0.8rem;
+}
+
+.SurveySummaryMetrics_metric {
+  display: block;
+  font-size: 2.4rem;
+  font-family: 'EnzoOT-Light', Sans-serif;
+  color: $SCORPION;
+}
+.SurveySummaryMetrics_metric--small {
+  font-size: 1.8rem;
+}
+
+.SurveySummaryMetrics_chart {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 5px auto 0;
+}
+
+#SurveySummaryMetrics_chartTooltip {
+  background: $SCORPION;
+  color: #FFF;
+  font-family: 'EnzoOT-Medi';
+  padding: 2px 5px;
+  width: 90px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.2s;
+}

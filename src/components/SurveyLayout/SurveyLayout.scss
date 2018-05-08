@@ -1,0 +1,138 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.SurveyLayout {
+  border: solid 1px $SILVER;
+  padding: 20px 20px 20px 70px;
+  margin-bottom: 40px;
+  position: relative;
+  color: $SCORPION;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyLayout_header {
+  border-bottom: solid 1px $SILVER;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.SurveyLayout_headerIcon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  fill: $CURIOUS_BLUE;
+}
+
+.SurveyLayout_title {
+  margin: 0;
+  padding: 0 0 10px;
+  font-size: 1.7rem;
+  font-family: 'EnzoOT-Light', Sans-serif;
+}
+
+.SurveyLayout_disclaimer {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.SurveyLayout_label {
+  display: block;
+  font-weight: 700;
+}
+
+.SurveyLayout_small {
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.SurveyLayout_uploadInstructions {
+  width: 48%;
+  margin-right: 2%;
+  color: $BOULDER;
+  height: 125px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.SurveyLayout_uploadDisclaimer {
+  font-weight: 400;
+  font-style: italic;
+  color: $AMARANTH;
+}
+
+.SurveyLayout_uploadWrapper {
+  width: 48%;
+  margin-left: 2%;
+  height: 125px;
+  float: right;
+}
+
+.SurveyLayout_fileUploader {
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+}
+
+.SurveyLayout_deleteLogoBtn {
+  @include LinkButton;
+  display: block;
+}
+
+.SurveyLayout_fieldWrapper {
+  margin-top: 40px;
+}
+
+.SurveyLayout_titleField {
+  width: 48%;
+  margin-right: 2%;
+  display: inline-block;
+}
+
+.SurveyLayout_footerField {
+  width: 48%;
+  margin-left: 2%;
+  display: inline-block;
+}
+
+.SurveyLayout_textarea {
+  width: 100%;
+  min-height: 100px;
+  border: solid 1px $SILVER;
+}
+
+.SurveyLayout_checkbox {
+  margin-right: 10px !important; /* override bootstrap  */
+}
+
+.SurveyLayout_footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.SurveyLayout_saveBtn {
+  @include FormButton
+  border: none;
+  background: $PISTACHIO;
+  color: #FFF;
+  padding: 10px 20px;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+  }
+}
+
+.SurveyLayout_saveIcon {
+  width: 24px;
+  height: 24px;
+  fill: #FFF;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+}

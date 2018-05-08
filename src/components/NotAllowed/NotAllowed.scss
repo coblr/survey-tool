@@ -1,0 +1,41 @@
+@import '../../styles/_colors';
+
+.NotAllowed {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 100px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.NotAllowed_title {
+  font-weight: 200;
+  margin-bottom: 40px;
+  color: $AMARANTH;
+}
+
+.NotAllowed_text {
+  font-weight: 300;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.NotAllowed_exitWrapper {
+  margin-top: 40px;
+}
+
+.NotAllowed_exitBtn {
+  background: $CURIOUS_BLUE;
+  color: #FFF;
+  padding: 10px 20px;
+  font-weight: 300;
+
+  &:hover {
+    text-decoration: none;
+    color: #FFF;
+    background: $PISTACHIO;
+  }
+}

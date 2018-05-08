@@ -1,0 +1,40 @@
+@import '../../styles/_colors';
+
+.ResponseSummary {
+  border: solid 1px $SILVER;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ResponseSummary_head {
+  background: $GALLERY;
+  color: $SCORPION;
+  border-bottom: solid 1px $ALTO;
+
+  & th {
+    padding: 10px;
+    font-weight: 300;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+.ResponseSummary_body {
+  background: #FFF;
+  color: $SCORPION;
+
+  & tr {
+    border-bottom: solid 1px $SILVER;
+  }
+
+  & td {
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 5px 10px;
+    text-align: center;
+  }
+}

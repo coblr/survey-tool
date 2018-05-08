@@ -1,0 +1,36 @@
+@import '../../styles/_colors';
+
+.SelectListPreview {
+  padding: 10px 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SelectListPreview_input {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.SelectListPreview_label {
+  font-weight: 400;
+  margin-left: 10px;
+  width: 95%;
+
+  & input[type="text"] {
+    height: 18px;
+    padding: 0;
+  }
+}
+
+.SelectListPreview_answerTag {
+  display: inline-block;
+  margin-left: 10px;
+  color: $DUSTY_GRAY;
+
+  &:not(:first-child) {
+    margin-left: 5px;
+  }
+}

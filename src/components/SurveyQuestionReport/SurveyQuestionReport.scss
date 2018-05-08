@@ -1,0 +1,75 @@
+@import '../../styles/_colors';
+
+.SurveyQuestionReport {
+  border: solid 1px $SILVER;
+  background: #FFF;
+  position: relative;
+  margin-bottom: 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyQuestionReport_header {
+  background: $ALABASTER;
+  width: 100%;
+  min-height: 20px;
+  border-bottom: solid 1px $ALTO;
+}
+
+.SurveyQuestionReport_id {
+  background: $CURIOUS_BLUE;
+  color: #FFF;
+  /*width: 5%;*/
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.SurveyQuestionReport_type {
+  display: inline-block;
+  width: 70%;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  letter-spacing: 0.2px;
+  color: $BOULDER;
+  text-transform: uppercase;
+}
+
+.SurveyQuestionReport_actions {
+  margin-top: 3px;
+  float: right;
+  text-align: right;
+}
+
+.SurveyQuestionReport_actionBtn {
+  border: none;
+  background: none;
+  font-size: 0.7rem;
+  color: $BOULDER;
+}
+
+.SurveyQuestionReport_actionIcon {
+  width: 14px;
+  height: 14px;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+  fill: $BOULDER;
+}
+
+.SurveyQuestionReport_question {
+  background: $POLAR;
+  border-bottom: solid 1px $ALTO;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+.SurveyQuestionReport_answers {
+
+}
+
+.SurveyQuestionReport_empty {
+  padding: 20px;
+  text-align: center;
+}

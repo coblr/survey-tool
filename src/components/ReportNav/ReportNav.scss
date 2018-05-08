@@ -1,0 +1,139 @@
+@import '../../styles/_colors';
+
+.ReportNav {
+  margin: 40px 0;
+  min-width: 720px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ReportNav_shortNavItem {
+  display: inline-block;
+  border: solid 2px $GALLERY;
+  padding: 20px 0;
+  margin-right: 2%;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: $BOULDER;
+  width: 25%;
+  height: 95px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $DUSTY_GRAY;
+  }
+
+  &:hover {
+    .ReportNav_shortNavIcon {
+      fill: $PISTACHIO;
+    }
+  }
+}
+
+.ReportNav_shortNavItem--selected {
+  background: $POLAR;
+  border: solid 3px $CURIOUS_BLUE;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 12px);
+    bottom: -12px;
+    width: 20px;
+    height: 20px;
+    border: solid 3px $CURIOUS_BLUE;
+    border-top: none;
+    border-left: none;
+    background: $POLAR;
+    transform: rotate(45deg);
+  }
+}
+
+.ReportNav_shortNavIcon {
+  width: 48px;
+  height: 48px;
+  fill: $CURIOUS_BLUE;
+  vertical-align: middle;
+  float: left;
+  margin-right: 5px;
+}
+
+.ReportNav_itemContent {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  text-align: left;
+}
+
+.ReportNav_longNavItem {
+  display: inline-block;
+  border: solid 2px $GALLERY;
+  padding: 20px 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: $BOULDER;
+  width: 45%;
+  height: 95px;
+  float: right;
+  margin: 0;
+  background: $ALABASTER;
+}
+
+.ReportNav_longItemContent {
+  min-width: 320px;
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.ReportNav_longNavLabel {
+  width: 50%;
+  display: inline-block;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+
+.ReportNav_longNavSmall {
+  font-size: 0.8rem;
+  display: block;
+}
+
+.ReportNav_arrowIcon {
+  width: 38px;
+  height: 38px;
+  fill: $BOULDER;
+  vertical-align: top;
+  margin: 0 10px;
+}
+
+.ReportNav_downloadBtn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ReportNav_csvIcon {
+  width: 48px;
+  height: 48px;
+  fill: $PISTACHIO;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+.ReportNav_docType {
+  margin: 10px 0 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  color: $CURIOUS_BLUE;
+}

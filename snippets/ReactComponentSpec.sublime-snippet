@@ -1,0 +1,22 @@
+<snippet>
+<content><![CDATA[
+import React from 'react';
+import {shallow} from 'enzyme';
+
+import {${1:ComponentName}} from './${1:ComponentName}';
+
+describe('${1:ComponentName} Component', () => {
+	const initialProps = {$2};
+
+	it('renders without crashing', () => {
+		const props = initialProps;
+		let component = shallow(<${1:ComponentName} {...props} />);
+		expect(component).toBeDefined();
+	});
+});
+]]></content>
+<tabTrigger>ReactComponentSpec</tabTrigger>
+<description>
+	Creates a test spec for a React presentation component.
+</description>
+</snippet>

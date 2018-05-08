@@ -1,0 +1,91 @@
+/* for some reason the bootstrap css is making our
+font size to 10px this fixes that. */
+html {
+  font-size: 16px;
+}
+
+/* use pretty blue intsead of web ugly blue */
+a {
+  color: $CURIOUS_BLUE;
+}
+
+/* setting our primary button to be blue, no rounded */
+.btn-primary {
+  background: $CURIOUS_BLUE;
+  border: none;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 0.05rem;
+  border-radius: 0;
+
+  &:hover {
+    color: #FFF;
+    background: darken($CURIOUS_BLUE, 10);
+  }
+
+  &:active {
+    color: #FFF;
+    background: lighten($CURIOUS_BLUE, 10);
+  }
+
+  &:disabled {
+    color: #FFF;
+    background: desaturate($CURIOUS_BLUE, 50);
+  }
+}
+
+/* changing the secondary button to be green, no rounded */
+.btn-secondary {
+  background: $PISTACHIO;
+  border: none;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 100;
+
+  &:hover {
+    color: #FFF;
+    background: darken($PISTACHIO, 10);
+  }
+
+  &:active {
+    color: #FFF;
+    background: lighten($PISTACHIO, 10);
+  }
+
+  &:disabled {
+    color: #FFF;
+    background: desaturate($PISTACHIO, 50);
+  }
+}
+
+/* remove the option to have really wide or narrow content */
+/* original SB version was like this, I don't know why. */
+.container {
+  min-width: 970px;
+  max-width: 970px;
+}
+
+/* remove ugly outline from buttons */
+button:focus {
+  outline: none;
+}
+
+/* remove rounded corners on buttons */
+button {
+  border-radius: 0;
+}
+
+/* class to remove the gutters from bootstrap cols */
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.ReactModal__Overlay--after-open {
+  z-index: 200;
+}
+
+.zEWidget-launcher {
+  bottom: 80px !important;
+}

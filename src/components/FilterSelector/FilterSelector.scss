@@ -1,0 +1,113 @@
+@import '../../styles/_colors';
+
+.FilterSelector {
+  position: relative;
+  display: inline-block;
+  z-index: 200;
+
+  &[style] {
+    visibility: visible !important;
+  }
+
+  &:hover {
+    .FilterSelector_menuWrapper {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.FilterSelector_toggle {
+  color: #FFF;
+  font-size: 0.9rem;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.FilterSelector_badge {
+  background: $BOULDER;
+  font-size: 0.8rem;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.FilterSelector_icon {
+  width: 12px;
+  height: 12px;
+  fill: #FFF;
+  vertical-align: middle;
+}
+
+.FilterSelector_menuWrapper {
+  position: absolute;
+  top: 20px;
+  right: -9px;
+  overflow: hidden;
+  transition: all 0.2s;
+  padding: 10px;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.FilterSelector_reportMenu {
+  padding: 7px 0;
+  background: #FFF;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background: #FFF;
+    border: solid 1px $ALTO;
+    border-right: none;
+    border-bottom: none;
+    position: absolute;
+    top: -6px;
+    right: 10px;
+  }
+}
+
+.FilterSelector_reportItem {
+  padding: 7px 15px;
+  display: block;
+  font-weight: 300;
+  font-size: 0.75rem;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $CURIOUS_BLUE;
+    outline: none;
+  }
+}
+
+.FilterSelector_reportItem--selected {
+  background: $CURIOUS_BLUE;
+  color: #FFF;
+
+  & .FilterSelector_reportItemIcon {
+    fill: #FFF;
+  }
+
+  &:hover {
+    color: #FFF;
+    background: darken($CURIOUS_BLUE, 10);
+  }
+
+  &:focus {
+    color: #FFF;
+  }
+}
+
+.FilterSelector_reportItemIcon {
+  width: 12px;
+  height: 12px;
+  fill: $BOULDER;
+  vertical-align: text-top;
+  margin-right: 5px;
+}

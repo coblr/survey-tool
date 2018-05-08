@@ -1,0 +1,44 @@
+@import '../../styles/_colors';
+
+.TextRanking {
+  padding: 30px 40px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.TextRanking_optionCol {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.TextRanking_option {
+  margin-bottom: 20px;
+  background: $GALLERY;
+  color: $SCORPION;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.TextRanking_rankCol {
+  width: 20%;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+.TextRanking_rankBox {
+  padding: 10px;
+  color: #FFF;
+  font-size: 3rem;
+  background: $ALTO;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.TextRanking_anchorTag {
+  display: inline-block;
+  margin-left: 10px;
+  color: $DUSTY_GRAY;
+}

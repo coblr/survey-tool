@@ -1,0 +1,37 @@
+@import '../../styles/_colors';
+
+.ToggleSwitch {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: $DUSTY_GRAY;
+  position: relative;
+  border-radius: 10px;
+  vertical-align: top;
+  /*box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.3);*/
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ToggleSwitch--active {
+  background: $PISTACHIO;
+
+  & .ToggleSwitch_knob {
+    left: calc(100% - 18px);
+  }
+}
+
+.ToggleSwitch_knob {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: #FFF;
+  border-radius: 10px;
+  width: 16px;
+  height: 16px;
+  /*box-shadow: inset 0 -2px 3px rgba(0,0,0,0.3);*/
+  transition: all 0.2s;
+}

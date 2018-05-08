@@ -1,0 +1,161 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.ThankYouPage {
+  background: $GALLERY;
+  color: $SCORPION;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ThankYouPage_header {
+  padding: 10px;
+}
+
+.ThankYouPage_headerIcon {
+  width: 22px;
+  height: 22px;
+  fill: $SCORPION;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.ThankYouPage_title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.ThankYouPage_actions {
+  text-align: right;
+  display: inline-block;
+  float: right;
+}
+
+.ThankYouPage_editBtn {
+  @include LinkButton;
+}
+
+.ThankYouPage_editIcon {
+  width: 16px;
+  height: 16px;
+  fill: $BOULDER;
+  vertical-align: middle;
+}
+
+.ThankYouPage_body {
+  margin: 0 10px;
+  background: $POLAR;
+  border: solid 1px $SILVER;
+  text-align: center;
+  padding: 40px;
+}
+
+.ThankYouPage_message {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: 'EnzoOT-Medi';
+  font-size: 0.9rem;
+  color: $SCORPION;
+}
+
+.ThankYouPage_footer {
+  padding: 10px;
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+.ThankYouPage_addQuestion {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.ThankYouPage_footerIcon {
+  width: 11px;
+  height: 11px;
+  fill: $SCORPION;
+  vertical-align: text-top;
+  margin-right: 5px;
+}
+
+/* --- */
+
+.ThankYouPage_editor {
+  border: solid 2px $PISTACHIO;
+  background: $ALABASTER;
+  margin: 0 10px;
+}
+
+.ThankYouPage_editorHeader {
+  border-bottom: solid 1px $PISTACHIO;
+  background: $COCO_CREAM;
+}
+
+.ThankYouPage_editorTitle {
+  background: $PISTACHIO;
+  color: $COCO_CREAM;
+  text-transform: uppercase;
+  width: 50px;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.ThankYouPage_editorBody {
+  padding: 10px 20px;
+}
+
+.ThankYouPage_editSection {
+  margin-bottom: 20px;
+}
+
+.ThankYouPage_editLabel {
+  display: block;
+}
+
+.ThankYouPage_radiobox {
+  margin-right: 5px !important;
+}
+
+.ThankYouPage_input {
+  width: 100%;
+  border: solid 1px $SILVER;
+  padding: 5px 10px;
+
+  &[disabled] {
+    background: $GALLERY;
+    color: $DUSTY_GRAY;
+  }
+}
+
+.ThankYouPage_editFooterLeft,
+.ThankYouPage_editFooterRight {
+  width: 50%;
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: left;
+  border-top: solid 1px $SILVER;
+}
+
+.ThankYouPage_editFooterRight {
+  text-align: right;
+}
+
+.ThankYouPage_save {
+  @include FormButton;
+  background: $PISTACHIO;
+  color: #FFF;
+}
+
+.ThankYouPage_cancel {
+  @include FormButton;
+  background: $BOULDER;
+  color: #FFF;
+}

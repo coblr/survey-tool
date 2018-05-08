@@ -1,0 +1,39 @@
+@import '../../styles/_colors';
+
+.QuestionTypeList {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.QuestionTypeList_title {
+  text-align: right;
+  font-family: 'EnzoOT-Bold', Sans-serif;
+  margin: 0;
+  padding: 0 0 5px;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.QuestionTypeList_selectBtn {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  text-align: right;
+  padding: 3px 0;
+  color: $SCORPION;
+
+  &:hover {
+    color: $AMARANTH;
+  }
+}
+
+.QuestionTypeList_notReadyIcon {
+  width: 10px;
+  height: 10px;
+  fill: $AMARANTH;
+  margin-right: 5px;
+}

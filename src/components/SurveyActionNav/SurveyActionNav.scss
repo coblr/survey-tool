@@ -1,0 +1,49 @@
+@import '../../styles/_colors';
+
+.SurveyActionNav {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px $SILVER;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyActionNav_item {
+  color: $BOULDER;
+  width: 100%;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  position: relative;
+
+  &:hover {
+    color: $CURIOUS_BLUE;
+    cursor: pointer;
+
+    /* it's just so easy to do.. */
+    .BuildActionsNav_itemIcon {
+      fill: $CURIOUS_BLUE;
+    }
+  }
+}
+
+.SurveyActionNav_itemIcon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: $BOULDER;
+}
+
+.SurveyActionNav_deleteAlert {
+  position: absolute;
+  top: -10px;
+  left: 100%;
+  color: $SCORPION;
+  font-weight: 400;
+  width: 205px;
+}

@@ -1,0 +1,35 @@
+@import '../../styles/_colors';
+
+.CreateFilterModal {
+  padding: 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.CreateFilterModal_label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: $SCORPION;
+}
+
+.CreateFilterModal_input {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+
+.CreateFilterModal_error {
+  min-height: 20px;
+  margin: 0;
+  padding: 0;
+  color: $AMARANTH;
+  font-size: 0.8rem;
+}
+
+.CreateFilterModal_throbber {
+  margin: 30px 0;
+}

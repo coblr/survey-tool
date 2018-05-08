@@ -1,0 +1,196 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.QuestionEditor {
+  border: solid 2px $PISTACHIO;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.QuestionEditor_header {
+  background: $COCO_CREAM;
+  border-bottom: solid 1px $PISTACHIO;
+}
+
+.QuestionEditor_title {
+  background: $PISTACHIO;
+  width: 20%;
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.QuestionEditor_form {
+  background: #fff;
+}
+
+.QuestionEditor_formSection {
+  width: 100%;
+  padding: 10px 20px;
+  position: relative;
+
+  &:nth-child(even) {
+    background: $ALABASTER;
+  }
+}
+
+.QuestionEditor_insertMedia {
+  float: right;
+}
+
+.QuestionEditor_insertMediaBtn {
+  @include LinkButton;
+  margin-left: 10px;
+}
+
+.QuestionEditor_addOtherOption {
+  float: right;
+  text-transform: none;
+  text-align: right;
+  width: 50%;
+}
+
+.QuestionEditor_addOtherOptionLink {
+  cursor: pointer;
+}
+
+.QuestionEditor_addOtherPlusIcon {
+  height: 11px;
+  width: 11px;
+  margin-right: 5px;
+  fill: $CURIOUS_BLUE;
+}
+
+/* --- */
+
+.QuestionEditor_fieldSet:not(:first-child) {
+  margin-top: 10px;
+}
+
+.QuestionEditor_changeTypeWarn {
+  top: 70px;
+  left: 20px;
+  width: 240px;
+}
+
+.QuestionEditor_label {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 0 0 10px;
+  padding: 0;
+  width: 50%;
+}
+
+.QuestionEditor_labelInstruction {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: $DUSTY_GRAY;
+  text-transform: lowercase;
+  margin-left: 10px;
+}
+
+/* --- */
+
+.QuestionEditor_insertMedia {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+.QuestionEditor_insertMediaLabel {
+  font-family: 'EnzoOT-Bold', sans-serif;
+}
+
+.QuestionEditor_insertMediaLink {
+  @include LinkButton;
+  margin: 0 5px;
+}
+
+/* --- */
+
+.QuestionEditor_questionInput,
+.QuestionEditor_answerInput {
+  width: 100%;
+  border: solid 1px $SILVER;
+  padding: 10px;
+}
+
+.QuestionEditor_answerInput {
+  min-height: 100px;
+}
+
+/* --- */
+
+.QuestionEditor_error {
+  min-height: 20px;
+  color: $AMARANTH;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+/* --- */
+
+.QuestionEditor_logicReferences {
+  padding: 5px 10px;
+  background: $CURIOUS_BLUE;
+  color: #fff;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+/* --- */
+
+.QuestionEditor_footer {
+  padding: 10px 20px;
+  background: $ALABASTER;
+  border-top: solid 1px $SILVER;
+}
+
+.QuestionEditor_col {
+  width: 50%;
+  display: inline-block;
+  position: relative;
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.QuestionEditor_cancel,
+.QuestionEditor_save {
+  @include FormButton;
+  background: $BOULDER;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+  }
+}
+
+.QuestionEditor_save {
+  background: $PISTACHIO;
+}
+
+.QuestionEditor_logicAlert {
+  width: 270px;
+  top: -25px;
+  right: 50px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  color: $AMARANTH;
+}
+
+.QuestionEditor_logicAlert--show {
+  visibility: visible;
+  opacity: 1;
+  right: 90px;
+}

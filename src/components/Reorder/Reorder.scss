@@ -1,0 +1,19 @@
+.Reorder {
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.Reorder_actions {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Reorder_editor {
+  width: 80%;
+  display: inline-block;
+  vertical-align: top;
+}

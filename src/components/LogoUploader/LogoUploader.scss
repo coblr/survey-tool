@@ -1,0 +1,32 @@
+@import '../../styles/_colors';
+
+.LogoUploader {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+/* the input is invisible OVER the prompt */
+.LogoUploader_input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.LogoUploader_prompt {
+  border: solid 1px $CURIOUS_BLUE;
+  color: $CURIOUS_BLUE;
+  background: $POLAR;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  text-align: center;
+}

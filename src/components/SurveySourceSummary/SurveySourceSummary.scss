@@ -1,0 +1,51 @@
+@import '../../styles/_colors';
+
+.SurveySourceSummary {
+  width: 100%;
+  border: solid 1px $SILVER;
+  color: $SCORPION;
+  margin-bottom: 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+
+  & thead {
+    background: $GALLERY;
+    border-bottom: solid 1px $ALTO;
+  }
+
+  & th {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+    font-weight: 400;
+    color: $BOULDER;
+  }
+
+  & tbody tr {
+    border-bottom: solid 1px $ALTO;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  & td {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+
+  & tfoot {
+    background: $GALLERY;
+    font-weight: 700;
+    border-top: solid 1px $ALTO;
+  }
+}
+
+.SurveySourceSummary_dataCol {
+  text-align: center;
+}
+
+.SurveySourceSummary_noSources {
+  text-align: center;
+}

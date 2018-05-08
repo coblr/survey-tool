@@ -1,0 +1,20 @@
+<snippet>
+<content><![CDATA[
+import {fromJS} from 'immutable';
+
+import reducer, * as actions from './${1:DuckName}';
+
+describe('${1:DuckName} Duck', () => {
+	it('${2:name your test}', () => {
+		const state = fromJS({${3:key:values before the change}});
+		const action = actions.${4:nameOfFnToTest}(${5:anyPayload?});
+		const nextState = reducer(state, action);
+		expect(nextState).toEqual(fromJS({${6:key:values after the change}}));
+	});
+});
+]]></content>
+<tabTrigger>ReduxDuckSpec</tabTrigger>
+<description>
+	Creates a test spec for a Redux Duck.
+</description>
+</snippet>

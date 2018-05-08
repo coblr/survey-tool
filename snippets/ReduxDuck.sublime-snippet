@@ -1,0 +1,33 @@
+<snippet>
+<content><![CDATA[
+import {fromJS} from 'immutable';
+
+const initialState = fromJS({
+	$4
+});
+
+export const ${1:ACTION_NAME} = '${2:appName}/${3:ModuleName}/${1:ACTION_NAME}';
+
+export const ${4:creatorFnName} = ($5) => ({
+	type: ${1:ACTION_NAME},
+	meta: {$6}
+});
+
+export default (state = initialState, action) => {
+	const payload = action.payload || null;
+	const meta = action.meta || null;
+
+	switch(action.type){
+		case ${1:ACTION_NAME}: {
+			return state$7;
+		}
+
+		default: return state;
+	}
+}
+]]></content>
+<tabTrigger>ReduxDuck</tabTrigger>
+<description>
+	Creates state, actions and a reducer in the Redux Duck format.
+</description>
+</snippet>

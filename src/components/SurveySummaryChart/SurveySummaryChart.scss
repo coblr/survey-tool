@@ -1,0 +1,25 @@
+@import '../../styles/_colors';
+
+.SurveySummaryChart {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveySummaryChart_noData {
+  margin-top: 30px;
+  font-weight: 200;
+  font-size: 1rem;
+  color: $AMARANTH;
+  text-align: center;
+}
+
+.SurveySummaryChart_noDataIcon {
+  width: 30px;
+  height: 30px;
+  fill: $AMARANTH;
+  display: block;
+  margin: 0 auto 10px;
+}

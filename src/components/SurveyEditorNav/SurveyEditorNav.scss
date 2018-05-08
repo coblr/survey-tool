@@ -1,0 +1,56 @@
+@import '../../styles/_colors';
+
+.SurveyEditorNav {
+  padding: 10px 0;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyEditorNav_navItem,
+.SurveyEditorNav_actionItem {
+  padding: 10px 20px;
+  display: inline-block;
+  color: $SCORPION;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $AMARANTH;
+
+    .SurveyEditorNav_icon {
+      fill: $AMARANTH;
+    }
+  }
+}
+
+.SurveyEditorNav_navItem {
+  text-align: left;
+  text-decoration: none;
+}
+
+.SurveyEditorNav_navItem--selected {
+  color: $AMARANTH;
+}
+
+.SurveyEditorNav_actionItem {
+  float: right;
+  text-align: right;
+}
+
+.SurveyEditorNav_icon {
+  width: 16px;
+  height: 16px;
+  fill: $SCORPION;
+  vertical-align: middle;
+  margin-right: 5px;
+}

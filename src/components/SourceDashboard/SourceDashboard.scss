@@ -1,0 +1,117 @@
+@import '../../styles/_colors';
+
+.SourceDashboard {
+  margin-top: 40px;
+  border: solid 1px $SILVER;
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+/* --- */
+
+.SourceDashboard_colHeadRow {
+  background: $SCORPION;
+}
+
+.SourceDashboard_colHeadCell {
+  color: #FFF;
+  font-weight: 300;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  text-align: center;
+  letter-spacing: 0.02rem;
+}
+
+.SourceDashboard_colHeadIcon {
+  width: 14px;
+  height: 14px;
+  fill: #FFF;
+}
+
+.SourceDashboard_refreshBtn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* --- */
+
+.SourceDashboard_bodyRow {
+  background: #FFF;
+}
+
+.SourceDashboard_cell {
+  padding: 10px;
+  color: $SCORPION;
+  text-align: center;
+  position: relative;
+}
+
+.SourceDashboard_cell--leftAlign {
+  text-align: left;
+}
+
+.SourceDashboard_cell--largeText {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.SourceDashboard_cell--redText {
+  color: $AMARANTH;
+}
+
+/* --- */
+
+.SourceDashboard_disableAlert {
+  position: absolute;
+  top: -30px;
+  right: 400px;
+  width: 300px;
+  transition: right 0.2s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.SourceDashboard_disableAlert--show {
+  opacity: 1;
+  right: 100px;
+  visibility: visible;
+}
+
+.SourceDashboard_disableTitle {
+  font-size: 0.9rem;
+  color: $AMARANTH;
+  text-transform: uppercase;
+}
+
+.SourceDashboard_disableMessage {
+
+}
+
+/* --- */
+
+.SourceDashboard_activeDot {
+  width: 8px;
+  height: 8px;
+  fill: $GALLERY;
+}
+
+.SourceDashboard_activeDot--active {
+  fill: $PISTACHIO;
+}
+
+.SourceDashboard_sourceIcon {
+  width: 24px;
+  height: 24px;
+  fill: $CURIOUS_BLUE;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.SourceDashboard_toggle {
+  margin-left: 5px;
+}

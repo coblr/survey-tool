@@ -1,0 +1,39 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.ModalDialogFooter {
+  background: #FFF;
+  overflow: auto;
+  padding: 10px 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ModalDialogFooter_dismiss {
+  float: left;
+  text-align: left;
+}
+
+.ModalDialogFooter_submit {
+  float: right;
+  text-align: right;
+}
+
+.ModalDialogFooter_dismissBtn,
+.ModalDialogFooter_submitBtn {
+  @include FormButton;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+  }
+}
+
+.ModalDialogFooter_dismissBtn {
+  background: $DUSTY_GRAY;
+}
+
+.ModalDialogFooter_submitBtn {
+  background: $PISTACHIO;
+}

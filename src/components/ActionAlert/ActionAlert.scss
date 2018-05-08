@@ -1,0 +1,114 @@
+@import '../../styles/_colors';
+
+.ActionAlert {
+  position: absolute;
+  background: #FFF;
+  border: solid 1px $SCORPION;
+  z-index: 2;
+  min-width: 200px;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.ActionAlert_dismiss,
+.ActionAlert_confirm {
+  padding: 2px 10px;
+  background: $SCORPION;
+  color: #FFF;
+  font-size: 0.7rem;
+  border: none;
+  margin: 0 5px;
+  transition: background 0.2s;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+  }
+}
+
+.ActionAlert_confirm {
+  background: $PISTACHIO;
+}
+
+/* --- */
+
+.ActionAlert--pointer {
+  &:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #FFF;
+    border: solid 1px $SCORPION;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+}
+
+.ActionAlert--topLeft:before,
+.ActionAlert--topCenter:before,
+.ActionAlert--topRight:before {
+  border-bottom: none;
+  border-right: none;
+  top: -7px;
+}
+.ActionAlert--topLeft:before {
+  left: calc(20% - 6px);
+}
+.ActionAlert--topCenter:before {
+  left: calc(50% - 6px);
+}
+.ActionAlert--topRight:before {
+  left: calc(80% - 6px);
+}
+
+.ActionAlert--bottomLeft:before,
+.ActionAlert--bottomCenter:before,
+.ActionAlert--bottomRight:before {
+  border-top: none;
+  border-left: none;
+  bottom: -7px;
+}
+.ActionAlert--bottomLeft:before {
+  left: calc(20% - 6px);
+}
+.ActionAlert--bottomCenter:before {
+  left: calc(50% - 6px);
+}
+.ActionAlert--bottomRight:before {
+  left: calc(80% - 6px);
+}
+
+.ActionAlert--leftTop:before,
+.ActionAlert--leftMiddle:before,
+.ActionAlert--leftBottom:before {
+  border-top: none;
+  border-right: none;
+  left: -7px;
+}
+.ActionAlert--leftTop:before {
+  top: calc(20% - 6px);
+}
+.ActionAlert--leftMiddle:before {
+  top: calc(50% - 6px);
+}
+.ActionAlert--leftBottom:before {
+  top: calc(80% - 6px);
+}
+
+.ActionAlert--rightTop:before,
+.ActionAlert--rightMiddle:before,
+.ActionAlert--rightBottom:before {
+  border-bottom: none;
+  border-left: none;
+  right: -7px;
+}
+.ActionAlert--rightTop:before {
+  top: calc(20% - 6px);
+}
+.ActionAlert--rightMiddle:before {
+  top: calc(50% - 6px);
+}
+.ActionAlert--rightBottom:before {
+  top: calc(80% - 6px);
+}

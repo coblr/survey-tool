@@ -1,0 +1,88 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.TextResponseModal {
+  padding: 20px;
+  max-height: 550px;
+  overflow: auto;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.TextResponseModal_question {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 1.3rem;
+  color: $SCORPION;
+}
+
+.TextResponseModal_table {
+  border: solid 1px $SILVER;
+  width: 100%;
+}
+
+.TextResponseModal_thead {
+  background: $GALLERY;
+  border-bottom: solid 1px $SILVER;
+
+  & th {
+    padding: 5px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: $SCORPION;
+  }
+}
+
+.TextResponseModal_tbody {
+  background: #FFF;
+
+  & tr {
+    border-bottom: solid 1px $SILVER;
+
+    &:last-child{
+      border-bottom: none;
+    }
+  }
+
+  & td {
+    padding: 5px;
+  }
+}
+
+.TextResponseModal_tfoot {
+  border-top: solid 1px $SILVER;
+
+  & td {
+    padding: 5px;
+    text-align: right;
+  }
+}
+
+.TextResponseModal_idCol {
+  text-align: center;
+}
+
+.TextResponseModal_responseCol {
+  text-align: left;
+  font-style: italic;
+}
+
+.TextResponseModal_actionCol {
+  text-align: right;
+}
+
+.TextResponseModal_link {
+  cursor: pointer;
+}
+
+.TextResponseModal_excludeBtn {
+  @include FormButton;
+  padding: 5px;
+  font-size: 0.7rem;
+
+  &:hover {
+    background: $AMARANTH;
+  }
+}

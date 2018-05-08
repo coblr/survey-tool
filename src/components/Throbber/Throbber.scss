@@ -1,0 +1,48 @@
+@import '../../styles/_colors';
+
+.Throbber {
+  display: none;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.Throbber--show {
+  display: block;
+}
+
+/* --- */
+
+.Throbber_icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.Throbber_icon--show {
+  opacity: 1;
+}
+
+.Throbber_iconImg {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* --- */
+
+.Throbber_text {
+  display: block;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.2s;
+  font-family: 'EnzoOT-Light', Sans-serif;
+}
+
+.Throbber_text--show {
+  opacity: 1;
+}

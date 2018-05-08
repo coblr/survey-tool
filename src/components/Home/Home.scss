@@ -1,0 +1,96 @@
+@import '../../styles/_colors';
+
+.Home {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.Home[style] {
+  visibility: visible !important;
+}
+
+.Home_throbber {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 200;
+  color: $CURIOUS_BLUE;
+  width: 250px;
+  height: 150px;
+
+  &.Throbber--show {
+    margin-top: 40px;
+  }
+}
+
+.Home_surveyDashboard {
+  background: #FFF;
+  border: solid 1px $SILVER;
+  height: 540px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.Home_listCol {
+  background: $GALLERY;
+  border-right: solid 1px $SILVER;
+  padding: 0;
+  margin: 0;
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Home_listColHeader {
+  padding: 10px;
+  background: $ALTO;
+  border-bottom: solid 1px #FFF;
+}
+
+.Home_listColFooter {
+  background: $ALTO;
+  border-top: solid 1px #FFF;
+  height: 40px;
+  padding: 12px 10px 0;
+  text-transform: uppercase;
+  color: $SCORPION;
+  font-size: 0.7rem;
+}
+
+.Home_reportCol {
+  margin: 0;
+  padding: 30px 15px 15px;
+  height: 540px;
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Home_noMatches {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 0;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: $AMARANTH;
+}
+
+.Home_dates {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  color: $BOULDER;
+}
+
+.Home_createdDate {
+  text-align: left;
+  display: inline-block;
+  width: 50%;
+}
+
+.Home_modifiedDate {
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+}

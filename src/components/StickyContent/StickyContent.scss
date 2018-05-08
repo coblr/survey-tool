@@ -1,0 +1,9 @@
+.StickyContent {
+  position: relative;
+  z-index: 20;
+}
+
+.StickyContent--stick {
+  position: fixed;
+  top: 10px;
+}

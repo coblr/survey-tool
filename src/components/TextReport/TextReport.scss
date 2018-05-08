@@ -1,0 +1,66 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.TextReport {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.TextReport_table {
+  width: 100%;
+  border-top: solid 1px $SILVER;
+
+  & tr {
+    border-bottom: solid 1px $ALTO;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.TextReport_tableHead {
+  border-bottom: solid 1px $ALTO;
+  background: $GALLERY;
+}
+
+.TextReport_headerCell,
+.TextReport_answerCell {
+  padding: 5px 10px;
+  border-right: solid 1px $ALTO;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.TextReport_headerCell {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.TextReport_answerCell {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: $SCORPION;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.TextReport_tableFoot {
+  border-top: solid 1px $ALTO;
+  background: $GALLERY;
+}
+
+.TextReport_totalCell {
+  padding: 5px;
+  font-weight: 300;
+}
+
+.TextReport_viewAllBtn {
+  @include LinkButton;
+  margin-left: 10px;
+}

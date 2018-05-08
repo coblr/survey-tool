@@ -1,0 +1,44 @@
+{
+	"ReactComponent": {
+		"prefix": "ReactComponent",
+		"body": ["\nimport React from 'react';\n\nimport './${1:ComponentName}.css';\n\nexport class ${1:ComponentName} extends React.PureComponent {\n\trender(){\n\t\treturn (<div className=\"${1:ComponentName}\">\n\t\t\tRendering ${1:ComponentName}\n\t\t</div>)\n\t}\n}\n\n${1:ComponentName}.propTypes = {$0};\n\nexport default ${1:ComponentName};\n"],
+		"description": "\n\tCreates a React presentation ('dumb') component.\n",
+		"scope": ""
+	},
+	"ReactComponentSpec": {
+		"prefix": "ReactComponentSpec",
+		"body": ["\nimport React from 'react';\nimport {shallow} from 'enzyme';\n\nimport {${1:ComponentName}} from './${1:ComponentName}';\n\ndescribe('${1:ComponentName} Component', () => {\n\tconst initialProps = {$2};\n\n\tit('renders without crashing', () => {\n\t\tconst props = initialProps;\n\t\tlet component = shallow(<${1:ComponentName} {...props} />);\n\t\texpect(component).toBeDefined();\n\t});\n});\n"],
+		"description": "\n\tCreates a test spec for a React presentation component.\n",
+		"scope": ""
+	},
+	"ReactContainer": {
+		"prefix": "ReactContainer",
+		"body": ["\nimport React from 'react';\nimport {connect} from 'react-redux';\n\nexport class ${1:ContainerName} extends React.PureComponent {\n\tcomponentDidMount(){\n\t\t// make any data requests here\n\t}\n\n\trender(){\n\t\treturn (\n\t\t\t<div>Rendering ${1:ContainerName}</div>\n\t\t)\n\t}\n}\n\n${1:ContainerName}.propTypes = {};\n\nconst mapStateToProps = state => ({});\n\nconst mapDispatchToProps = dispatch => ({});\n\nexport default connect(\n\tmapStateToProps,\n\tmapDispatchToProps\n)(${1:ContainerName});\n"],
+		"description": "\n\tCreates a React container ('smart') component.\n",
+		"scope": ""
+	},
+	"ReactContainerSpec": {
+		"prefix": "ReactContainerSpec",
+		"body": ["\nimport React from 'react';\nimport {shallow} from 'enzyme';\n\nimport {${1:ContainerName}} from './${1:ContainerName}';\n\ndescribe('${1:ContainerName} Container', () => {\n\tconst initialProps = {$2};\n\n\tit('renders without crashing', () => {\n\t\tconst props = initialProps;\n\t\tlet container = shallow(<${1:ContainerName} {...props} />);\n\t\texpect(container).toBeDefined();\n\t});\n});\n"],
+		"description": "\n\tCreates a test spec for a React container component.\n",
+		"scope": ""
+	},
+	"ReactForm": {
+		"prefix": "ReactForm",
+		"body": ["\nimport React from 'react';\nimport {Field, reduxForm} from 'redux-form';\n\nimport './${1:ComponentName}.component.css';\n\nexport class ${1:ComponentName} extends React.PureComponent {\n  render(){\n    const {handleSubmit} = this.props;\n    return (\n      <form\n        name=\"${2:formName}\"\n        className=\"${1:ComponentName}\"\n        onSubmit={handleSubmit}\n        method=\"POST\">\n        $0\n      </form>\n    )\n  }\n}\n\n${1:ComponentName}.propTypes = {\n  handleSubmit: React.PropTypes.func\n};\n\nexport default reduxForm({\n  form: '${2:formName}'\n})(${1:ComponentName});\n"],
+		"description": "Creates a React form component.",
+		"scope": ""
+	},
+	"ReduxDuck": {
+		"prefix": "ReduxDuck",
+		"body": ["\nimport {fromJS} from 'immutable';\n\nconst initialState = fromJS({\n\t$4\n});\n\nexport const ${1:ACTION_NAME} = '${2:appName}/${3:ModuleName}/${1:ACTION_NAME}';\n\nexport const ${4:creatorFnName} = ($5) => ({\n\ttype: ${1:ACTION_NAME},\n\tmeta: {$6}\n});\n\nexport default (state = initialState, action) => {\n\tconst payload = action.payload || null;\n\tconst meta = action.meta || null;\n\n\tswitch(action.type){\n\t\tcase ${1:ACTION_NAME}: {\n\t\t\treturn state$7;\n\t\t}\n\n\t\tdefault: return state;\n\t}\n}\n"],
+		"description": "\n\tCreates state, actions and a reducer in the Redux Duck format.\n",
+		"scope": ""
+	},
+	"ReduxDuckSpec": {
+		"prefix": "ReduxDuckSpec",
+		"body": ["\nimport {fromJS} from 'immutable';\n\nimport reducer, * as actions from './${1:DuckName}';\n\ndescribe('${1:DuckName} Duck', () => {\n\tit('${2:name your test}', () => {\n\t\tconst state = fromJS({${3:key:values before the change}});\n\t\tconst action = actions.${4:nameOfFnToTest}(${5:anyPayload?});\n\t\tconst nextState = reducer(state, action);\n\t\texpect(nextState).toEqual(fromJS({${6:key:values after the change}}));\n\t});\n});\n"],
+		"description": "\n\tCreates a test spec for a Redux Duck.\n",
+		"scope": ""
+	}
+}

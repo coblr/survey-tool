@@ -1,0 +1,103 @@
+@import '../../styles/_colors';
+
+.ModalDialog {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+/* must be display none or it will block other items*/
+.ModalDialog_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FFF;
+  opacity: 0.8;
+  z-index: 9999;
+  display: none;
+  transition: all 0.2s;
+}
+
+.ModalDialog_background--show {
+  display: block;
+}
+
+.ModalDialog_modal {
+  position: fixed;
+  z-index: 10000;
+  min-width: 300px;
+  min-height: 0px;
+  /*overflow: hidden;*/
+  top: -100%;
+  left: calc(50% - 300px);
+  background: $GALLERY;
+  border: solid 1px $ALTO;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: top 200ms 0ms ease-out, opacity 200ms 50ms ease-out;
+}
+
+.ModalDialog_modal--show {
+  opacity: 1;
+  top: 10%;
+}
+
+.ModalDialog_body {
+  /*overflow: auto;*/
+  width: 100%;
+}
+
+.ModalDialog_throbber {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto 0;
+}
+
+/* --- */
+
+.ModalDialog_bgTransition-enter {
+  opacity: 0;
+}
+
+.ModalDialog_bgTransition-enter.ModalDialog_bgTransition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-out;
+}
+
+.ModalDialog_bgTransition-leave {
+  opacity: 1;
+}
+
+.ModalDialog_bgTransition-leave.ModalDialog_bgTransition-leave-active {
+  opacity: 0;
+  transition: opacity 200ms 200ms ease-in;
+}
+
+/* --- */
+
+.ModalDialog_transition-enter {
+  opacity: 0;
+  transform: translateY(-200px);
+}
+
+.ModalDialog_transition-enter.ModalDialog_transition-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 400ms ease-out, opacity 200ms 25ms ease-out;
+}
+
+.ModalDialog_transition-leave {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ModalDialog_transition-leave.ModalDialog_transition-leave-active {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: transform 200ms 100ms ease-in, opacity 200ms;
+}

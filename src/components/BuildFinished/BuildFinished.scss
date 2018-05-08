@@ -1,0 +1,93 @@
+@import '../../styles/_colors';
+
+.BuildFinished {
+  margin: 40px 0;
+  text-align: center;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+/* --- */
+.BuildFinished_top {
+  padding-bottom: 20px;
+}
+
+.BuildFinished_title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: $SCORPION;
+  vertical-align: middle;
+}
+
+.BuildFinished_icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: $SCORPION;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.BuildFinished_promoteBtn {
+  display: inline-block;
+  border: solid 1px $CURIOUS_BLUE;
+  color: $CURIOUS_BLUE;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+    color: #FFF;
+    text-decoration: none;
+
+    .BuildFinished_promoteBtnIcon {
+      fill: #FFF;
+    }
+  }
+}
+
+.BuildFinished_promoteBtnIcon {
+  width: 20px;
+  height: 20px;
+  fill: $CURIOUS_BLUE;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+
+/* --- */
+
+.BuildFinished_bottom {
+  margin-top: 20px;
+}
+
+.BuildFinished_text {
+  font-size: 0.9rem;
+  color: $BOULDER;
+}
+
+.BuildFinished_emailBtn {
+  background: $CURIOUS_BLUE;
+  padding: 10px 20px;
+  border: solid 1px transparent;
+  background: $CURIOUS_BLUE;
+  color: #FFF;
+  transition: all 0.2s;
+
+  &:hover {
+    background: $PISTACHIO;
+  }
+}
+
+.BuildFinished_emailBtnIcon {
+  width: 16px;
+  height: 16px;
+  fill: #FFF;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}

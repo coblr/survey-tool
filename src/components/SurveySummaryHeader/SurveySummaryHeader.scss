@@ -1,0 +1,61 @@
+@import '../../styles/_colors';
+
+.SurveySummaryHeader {
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  min-height: 40px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveySummaryHeader_title {
+  font-family: 'EnzoOT-Light', Sans-serif;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0 0 0 10px;
+  display: inline-block;
+}
+
+.SurveySummaryHeader_titleIcon {
+  width: 32px;
+  height: 32px;
+  fill: $AMARANTH;
+  vertical-align: text-bottom;
+}
+
+.SurveySummaryHeader_titleEdit {
+  color: $SILVER;
+  margin-left: 10px;
+}
+
+.SurveySummaryHeader_surveyActions {
+  position: absolute;
+  top: -25px;
+  right: -5px;
+}
+
+.SurveySummaryHeader_surveyAction {
+  background: none;
+  border: none;
+  color: $BOULDER;
+}
+
+.SurveySummaryHeader_surveyActionIcon {
+  width: 14px;
+  height: 14px;
+  fill: $DUSTY_GRAY;
+  transition: fill 0.2s;
+
+  &:hover {
+    fill: $CURIOUS_BLUE;
+  }
+}
+
+.SurveySummaryHeader_deleteAlert {
+  top: -6px;
+  right: 32px;
+  width: 230px;
+}

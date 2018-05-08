@@ -1,0 +1,101 @@
+@import '../../styles/_colors';
+
+.SurveyList {
+  display: block;
+  height: 445px;
+  overflow: hidden;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyList_noSurveys {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.SurveyList_colHeaders {
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px 15px;
+  background: $ALTO;
+  border-bottom: solid 1px #FFF;
+  font-weight: 400;
+  color: $SCORPION;
+  font-size: 0.7rem;
+}
+
+.SurveyList_listWrapper {
+  height: 410px;
+  overflow: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: $ALABASTER;
+}
+
+.SurveyList_survey {
+  width: 100%;
+  padding: 10px 15px;
+  word-wrap: break-word;
+  border-bottom: solid 1px $SILVER;
+  font-weight: 300;
+  color: $SCORPION;
+  font-size: 0.8rem;
+  transition: background linear 0.2s;
+  background: $ALABASTER;
+  display: block;
+
+  &:hover {
+    background: $ALTO;
+  }
+
+  &:hover, &:focus {
+    color: $CURIOUS_BLUE;
+  }
+}
+
+/*.SurveyList_survey--inProject {
+  background: $POLAR;
+}*/
+
+.SurveyList_survey--selected {
+  background: $ALTO;
+}
+
+
+.SurveyList_titleCol {
+  width: 80%;
+  display: inline-block;
+}
+
+.SurveyList_iconCol {
+  width: 20%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+.SurveyList_surveyTitle {
+  word-wrap: break-word;
+}
+
+.SurveyList_surveyTitle--highlight {
+  font-weight: 600;
+  color: $CURIOUS_BLUE;
+}
+
+.SurveyList_surveyIcon {
+  fill: $AMARANTH;
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+}
+
+.SurveyList_projectIcon {
+  width: 12px;
+  height: 12px;
+  vertical-align: baseline;
+}

@@ -1,0 +1,65 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.EmailLead {
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.EmailLead_fields {
+
+}
+
+.EmailLead_formField {
+  display: inline-block;
+  width: 50%;
+  padding: 10px;
+}
+
+.EmailLead_label {
+  display: block;
+}
+
+.EmailLead_small {
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.EmailLead_input {
+  @include FormInput;
+  width: 100%;
+}
+
+.EmailLead_buttonRow {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.EmailLead_submitBtn {
+  @include FormButton;
+  background: $CURIOUS_BLUE;
+
+  &:hover {
+    background: $PISTACHIO;
+  }
+}
+
+.EmailLead_error {
+  color: $AMARANTH;
+}
+
+.EmailLead_thanksTitle {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  color: $CURIOUS_BLUE;
+}
+
+.EmailLead_thanksText {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}

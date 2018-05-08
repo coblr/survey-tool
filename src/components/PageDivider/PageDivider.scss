@@ -1,0 +1,23 @@
+@import '../../styles/_colors';
+
+.PageDivider {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.PageDivider_button {
+  background: $CURIOUS_BLUE;
+  color: #FFF;
+  border: none;
+  padding: 5px 10px;
+}
+
+.PageDivider_icon {
+  width: 16px;
+  height: 16px;
+  fill: #FFF;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}

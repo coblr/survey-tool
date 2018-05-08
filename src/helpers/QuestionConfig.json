@@ -1,0 +1,337 @@
+[{
+  "key": "SINGLE_SELECT_LIST",
+  "title": "Single-Select List",
+  "desc": "Only one can be selected",
+  "imgId": "single-select-list",
+  "questionType": "list",
+  "answerType": "list",
+  "supportedCharts": ["table","column","pie"],
+  "available": true,
+  "editors": [
+    "type",
+    "question",
+    "answers"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "hide"
+  ]
+},{
+  "key": "SINGLE_SELECT_IMAGES",
+  "title": "Single-Select Images",
+  "desc": "Only one image can be selected.",
+  "imgId": "single-select-images",
+  "questionType": "list",
+  "answerType": "images",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "hide"
+  ]
+},{
+  "key": "MULTI_SELECT_LIST",
+  "title": "Multi-Select List",
+  "desc": "Multiple options can be selected.",
+  "imgId": "multi-select-list",
+  "questionType": "list",
+  "answerType": "list",
+  "supportedCharts": ["table","column","pie"],
+  "available": true,
+  "editors": [
+    "type",
+    "question",
+    "answers"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "exclusive",
+    "minAnswers",
+    "maxAnswers",
+    "hide"
+  ]
+},{
+  "key": "MULTI_SELECT_IMAGES",
+  "title": "Multi-Select Images",
+  "desc": "Multiple images can be selected.",
+  "imgId": "multi-select-images",
+  "questionType": "list",
+  "answerType": "images",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "minAnswers",
+    "maxAnswers",
+    "hide"
+  ]
+},{
+  "key": "DROP_DOWN_LIST",
+  "title": "Drop-Down List",
+  "desc": "Only one value can be selected from the drop-down.",
+  "imgId": "drop-down-list",
+  "questionType": "list",
+  "answerType": "list",
+  "supportedCharts": ["table","column","pie"],
+  "available": true,
+  "editors": [
+    "type",
+    "question",
+    "answers"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "hide"
+  ]
+},{
+  "key": "SINGLE_SELECT_MATRIX",
+  "title": "Single-Select Matrix",
+  "desc": "Only one option can be selected, per row",
+  "imgId": "single-select-matrix",
+  "questionType": "matrix",
+  "answerType": "matrix",
+  "supportedCharts": [],
+  "available": true,
+  "editors": [
+    "type",
+    "question",
+    "rows",
+    "columns"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "minAnswers",
+    "maxAnswers",
+    "hide"
+  ]
+},{
+  "key": "MULTI_SELECT_MATRIX",
+  "title": "Multi-Select Matrix",
+  "desc": "Multiple options can be selected, per row.",
+  "imgId": "multi-select-matrix",
+  "questionType": "matrix",
+  "answerType": "matrix",
+  "supportedCharts": [],
+  "available": true,
+  "editors": [
+    "type",
+    "question",
+    "rows",
+    "columns"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "exclusive",
+    "minAnswers",
+    "maxAnswers",
+    "hide"
+  ]
+},{
+  "key": "TEXT_RANKING",
+  "title": "Text Ranking",
+  "desc": "Allow a respondant to drag and drop options into a specified ranked order.",
+  "imgId": "text-ranking",
+  "questionType": "matrix",
+  "answerType": "ranking",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "hide"
+  ]
+},{
+  "key": "CARD_RANKING",
+  "title": "Card Ranking",
+  "desc": "Allow a respondant to drag and drop options into specified buckets.",
+  "imgId": "card-ranking",
+  "questionType": "matrix",
+  "answerType": "ranking",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "hide"
+  ]
+},{
+  "key": "IMAGE_RANKING",
+  "title": "Image Ranking",
+  "desc": "Allow a respondant to drag and drop images into a specified ranked order.",
+  "imgId": "image-ranking",
+  "questionType": "matrix",
+  "answerType": "ranking",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "randomize",
+    "hide"
+  ]
+},{
+  "key": "DESCRIPTIVE_TEXT",
+  "title": "Descriptive Text",
+  "desc": "A text block that can be used for survey introductions or interstitial text screen",
+  "imgId": "descriptive-text",
+  "questionType": "other",
+  "answerType": "textarea",
+  "supportedCharts": [],
+  "available": true,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "hide"
+  ]
+},{
+  "key": "COMMENT_BOX",
+  "title": "Comment Box",
+  "desc": "Long randomize or comments can be entered.",
+  "imgId": "comment-box",
+  "questionType": "other",
+  "answerType": "textarea",
+  "supportedCharts": [],
+  "available": true,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "inputType",
+    "inputLength",
+    "hide"
+  ]
+},{
+  "key": "SINGLE_LINE_TEXT",
+  "title": "Single-Line Text",
+  "desc": "A short text answer can be entered.",
+  "imgId": "single-line-text",
+  "questionType": "other",
+  "answerType": "textarea",
+  "supportedCharts": [],
+  "available": true,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "inputType",
+    "inputLength",
+    "hide"
+  ]
+},{
+  "key": "VIDEO_RATING",
+  "title": "Video Rating",
+  "desc": "Rating dial allows continuous rating of a video while watching.",
+  "imgId": "video-rating",
+  "questionType": "other",
+  "answerType": "upload",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "hide"
+  ]
+},{
+  "key": "PHOTO_RESPONSE",
+  "title": "Photo Response",
+  "desc": "Ask respondants to take a photo with their mobile device",
+  "imgId": "photo-response",
+  "questionType": "mobile",
+  "answerType": "upload",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "hide"
+  ]
+},{
+  "key": "VIDEO_RESPONSE",
+  "title": "Video Response",
+  "desc": "Ask respondants to take a video with their mobile device.",
+  "imgId": "video-response",
+  "questionType": "mobile",
+  "answerType": "upload",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "hide"
+  ]
+},{
+  "key": "AUDIO_RESPONSE",
+  "title": "Audio Response",
+  "desc": "Ask respondants to record their audio response with their mobile device.",
+  "imgId": "audio-response",
+  "questionType": "mobile",
+  "answerType": "upload",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "hide"
+  ]
+},{
+  "key": "BARCODE_SCANNING",
+  "title": "Barcode Scanning",
+  "desc": "Scan any barcode with a mobile device.",
+  "imgId": "barcode-scanning",
+  "questionType": "mobile",
+  "answerType": "upload",
+  "supportedCharts": [],
+  "available": false,
+  "editors": [
+    "type",
+    "question"
+  ],
+  "options": [
+    "mandatory",
+    "hide"
+  ]
+}]

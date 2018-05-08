@@ -1,0 +1,97 @@
+@import '../../styles/_colors';
+
+.QuestionMedia {
+  width: 100%;
+}
+
+.QuestionMedia_table {
+  display: table;
+  width: 100%;
+  background: #fff;
+  border: solid 1px $SILVER;
+  padding: 5px;
+}
+
+.QuestionMedia_throbber {
+  padding: 20px 0;
+}
+
+/* --- */
+
+.QuestionMedia_error {
+  background: $AMARANTH;
+  padding: 10px;
+  color: #fff;
+}
+
+/* --- */
+
+.QuestionMedia_upload {
+  text-align: left;
+  display: table-cell;
+  width: 150px;
+}
+
+.QuestionMedia_uploadBtn {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.QuestionMedia_uploadIcon {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.QuestionMedia_requirements {
+  display: table-cell;
+  vertical-align: top;
+  padding: 0 0 0 20px;
+}
+
+/* --- */
+
+.QuestionMedia_preview {
+  display: table-cell;
+}
+
+.QuestionMedia_img {
+  max-width: 120px;
+  max-height: 120px;
+  background: $SILVER;
+}
+
+.QuestionMedia_sizes {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+
+  .MediaSizeSelector_sizeBtn {
+    margin: 0 0 0 10px;
+  }
+}
+
+.QuestionMedia_delete {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.QuestionMedia_deleteBtn {
+  background: none;
+  border: none;
+  transition: all 0.2s;
+}
+
+.QuestionMedia_deleteIcon {
+  width: 16px;
+  height: 16px;
+  fill: $AMARANTH;
+
+  &:hover {
+    fill: $CURIOUS_BLUE;
+  }
+}

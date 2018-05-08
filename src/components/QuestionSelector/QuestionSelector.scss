@@ -1,0 +1,110 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.QuestionSelector {
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.QuestionSelector_header {
+  background: $COCO_CREAM;
+  border-bottom: solid 1px $PISTACHIO;
+}
+
+.QuestionSelector_title {
+  background: $PISTACHIO;
+  width: 20%;
+  padding: 5px 10px;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.QuestionSelector_body {
+  background: #FFF;
+}
+
+.QuestionSelector_typeCol {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.QuestionSelector_typeList{
+  padding-bottom: 10px;
+  margin-left: 30px;
+  border-bottom: solid 1px $ALTO;
+  margin-bottom: 10px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.QuestionSelector_preview {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  text-align: center;
+}
+
+.QuestionSelector_previewTitle {
+  text-align: left;
+  font-size: 1.3rem;
+  color: $AMARANTH;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+.QuestionSelector_previewComingSoon {
+  font-size: 0.9rem;
+  color: $CURIOUS_BLUE;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.QuestionSelector_previewDesc {
+  text-align: left;
+  color: $DUSTY_GRAY;
+  margin-bottom: 20px;
+}
+
+.QuestionSelector_footer {
+  padding: 10px 20px;
+  background: $ALABASTER;
+  border-top: solid 1px $SILVER;
+}
+
+.QuestionSelector_col {
+  width: 50%;
+  display: inline-block;
+}
+
+.QuestionSelector_cancel {
+  @include FormButton;
+  background: $BOULDER;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+  }
+}
+
+.QuestionSelector_iconLegend {
+  padding-left: 30px;
+  text-align: right;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.QuestionSelector_notReadyIcon {
+  width: 10px;
+  height: 10px;
+  fill: $AMARANTH;
+  margin-left: 5px;
+}

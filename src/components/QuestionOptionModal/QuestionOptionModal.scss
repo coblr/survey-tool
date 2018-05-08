@@ -1,0 +1,60 @@
+@import '../../styles/_colors';
+
+.QuestionOptionModal {
+  padding: 20px;
+  max-height: 500px;
+  overflow: auto;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.QuestionOptionModal_throbber {
+  width: 100px;
+  margin: 50px auto 100px;
+}
+
+.QuestionOptionModal_optionField {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px $SILVER;
+
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+.QuestionOptionModal_optionDesc {
+  padding: 0;
+  margin: 0 0 5px;
+  font-size: 0.75rem;
+}
+
+.QuestionOptionModal_optionLabel {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.QuestionOptionModal_radioLabel {
+  margin-left: 30px;
+}
+
+.QuestionOptionModal_blockLabel {
+  display: block;
+  padding-left: 20px;
+}
+
+.QuestionOptionModal_checkbox {
+  margin-right: 10px !important; /* override bootstrap  */
+}
+
+.QuestionOptionModal_input {
+  margin: 0 5px;
+  width: 40px;
+}
+
+.QuestionOptionModal_optionTable {
+  margin-top: 10px;
+}

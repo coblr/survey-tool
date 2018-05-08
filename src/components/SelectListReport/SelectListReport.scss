@@ -1,0 +1,139 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.SelectListReport {
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SelectListReport_barChart,
+.SelectListReport_pieChart {
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+}
+
+.SelectListReport_table {
+  width: 100%;
+  border-top: solid 1px $SILVER;
+
+  & thead {
+    border-bottom: solid 1px $ALTO;
+    background: $GALLERY;
+  }
+
+  & tfoot {
+    border-top: solid 1px $ALTO;
+    background: $GALLERY;
+  }
+
+  & tr {
+    border-bottom: solid 1px $ALTO;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  & th, & td {
+    padding: 5px 10px;
+    border-right: solid 1px $ALTO;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  & th {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+
+  & td {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: $SCORPION;
+  }
+}
+
+.SelectListReport_startLabel {
+  float: left;
+}
+
+.SelectListReport_endLabel {
+  float: right;
+}
+
+.SelectListReport_barGraphBg {
+  width: 100%;
+  height: 10px;
+  background: $GALLERY;
+  margin-top: 5px;
+}
+
+.SelectListReport_barGraph {
+  height: 100%;
+  background: $AMARANTH;
+  transition: width 0.2s ease-out;
+}
+
+/* --- */
+
+.SelectListReport_orderCol {
+  width: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.SelectListReport_answerCol {
+  text-align: left;
+}
+
+.SelectListReport_responseCol {
+  width: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.SelectListReport_percentCol {
+  width: 50px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.SelectListReport_graphCol {
+  width: 150px;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* --- */
+
+.SelectListReport_totalLabelCol {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.SelectListReport_respondentTotal {
+  margin-right: 10px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.SelectListReport_totalCol {
+  text-align: center;
+}
+
+.SelectListReport_otherResponse {
+  margin: 5px 0;
+  font-style: italic;
+  color: $BOULDER;
+}
+
+.SelectListReport_viewAllBtn {
+  @include LinkButton;
+  margin-left: 0px;
+}

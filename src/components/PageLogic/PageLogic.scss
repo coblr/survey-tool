@@ -1,0 +1,248 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.PageLogic {
+  margin-top: 20px;
+  border: solid 1px $SILVER;
+  background: $ALABASTER;
+}
+
+.PageLogic--edit {
+  border: solid 2px $PISTACHIO;
+}
+
+.PageLogic_header {
+  padding: 10px;
+}
+
+.PageLogic_title {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  width: 50%;
+}
+
+.PageLogic_titleIcon {
+  width: 24px;
+  height: 24px;
+  fill: $SCORPION;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+
+.PageLogic_actions {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+
+  & button {
+    margin-left: 10px;
+  }
+}
+
+.PageLogic_editBtn,
+.PageLogic_deleteBtn {
+  @include LinkButton;
+}
+
+.PageLogic_editIcon {
+  width: 14px;
+  height: 14px;
+  fill: $SCORPION;
+}
+
+.PageLogic_viewBranch {
+  padding: 10px;
+  border-top: solid 1px $ALTO;
+}
+
+.PageLogic_branchHeader {
+  padding: 10px;
+  background: $ALABASTER;
+  border-top: solid 2px $PISTACHIO;
+  border-bottom: solid 1px $GALLERY;
+  margin-bottom: 5px;
+}
+
+.PageLogic_branchTitle {
+  font-family: 'EnzoOT-Medi', Sans-Serif;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.PageLogic_branchIcon {
+  width: 16px;
+  height: 16px;
+  fill: $PISTACHIO;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.PageLogic_branchCondition {
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.PageLogic_branchInstruction {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+  margin-right: 10px;
+  text-transform: uppercase;
+  color: $PISTACHIO;
+  font-family: 'EnzoOT-Medi', Sans-Serif;
+}
+
+.PageLogic_QADivider {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.PageLogic_branchPredicate {
+  color: $PISTACHIO;
+  font-family: 'EnzoOT-Medi', Sans-Serif;
+  margin-left: 5px;
+}
+
+/* ---------------------- */
+
+.PageLogic_editor {
+  background: #FFF;
+}
+
+.PageLogic_defaultPage {
+  border-top: solid 1px $PISTACHIO;
+  background: #FFF;
+  padding: 10px;
+}
+
+.PageLogic_branchTitle {
+  display: inline-block;
+  width: 50%;
+}
+
+.PageLogic_branchActions {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+
+.PageLogic_deleteBranchBtn {
+  @include LinkButton;
+}
+
+.PageLogic_deleteIcon {
+  width: 16px;
+  height: 16px;
+  fill: $BOULDER;
+
+  &:hover {
+    fill: $CURIOUS_BLUE;
+  }
+}
+
+.PageLogic_editBranchHeader {
+  padding: 10px;
+  background: $ALABASTER;
+  border-top: solid 2px $PISTACHIO;
+  border-bottom: solid 1px $GALLERY;
+}
+
+.PageLogic_editCondition {
+  padding: 5px 10px;
+  margin: 0;
+  border-bottom: solid 1px $ALTO;
+  position: relative;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.PageLogic_error {
+  margin: 0 0 2px;
+  padding: 0 0 0 75px;
+  color: $DUSTY_GRAY;
+  font-size: 0.8rem;
+}
+
+.PageLogic_select {
+  color: $SCORPION;
+  margin: 0 2px;
+  display: inline-block;
+  width: auto;
+  max-width: 200px;
+}
+
+.PageLogic_conditionActions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.PageLogic_deleteConditionBtn {
+  @include LinkButton;
+}
+
+.PageLogic_conditionFooter {
+  padding: 10px 10px 10px 85px;
+  background: $ALABASTER;
+  text-align: left;
+  border-top: solid 1px $GALLERY;
+}
+
+.PageLogic_branchFooter {
+  padding: 10px;
+  background: $ALABASTER;
+  text-align: left;
+  border-top: solid 1px $PISTACHIO;
+}
+
+.PageLogic_addBranchBtn {
+  @include LinkButton;
+
+  &:hover .PageLogic_addBranchIcon {
+    fill: $AMARANTH;
+  }
+}
+
+.PageLogic_addBranchIcon {
+  width: 16px;
+  height: 16px;
+  fill: $CURIOUS_BLUE;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+
+.PageLogic_footer {
+  padding: 10px;
+  border-top: solid 1px $PISTACHIO;
+}
+
+.PageLogic_footerLeft {
+  display: inline-block;
+  width: 50%;
+}
+
+.PageLogic_footerRight {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+}
+
+.PageLogic_cancelBtn {
+  @include FormButton;
+  background: $SCORPION;
+  color: #FFF;
+}
+
+.PageLogic_submitBtn {
+  @include FormButton;
+  background: $PISTACHIO;
+  color: #FFF;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+  }
+}

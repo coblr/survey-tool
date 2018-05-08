@@ -1,0 +1,119 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.ReportWrapper {
+  margin-bottom: 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.ReportWrapper_titleBar {
+  width: 100%;
+  background: $SCORPION;
+  color: #FFF;
+  font-family: 'EnzoOT-Light', Sans-serif;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.ReportWrapper_titleIcon {
+  width: 20px;
+  height: 20px;
+  fill: #FFF;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+}
+
+.ReportWrapper_actions {
+  float: right;
+}
+
+.ReportWrapper_newReportBtn {
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: $CURIOUS_BLUE;
+
+    & .ReportWrapper_newReportIcon {
+      fill: $CURIOUS_BLUE;
+    }
+  }
+}
+
+.ReportWrapper_newReportIcon {
+  width: 18px;
+  height: 18px;
+  fill: #FFF;
+  margin-right: 5px;
+  vertical-align: text-bottom;
+}
+
+.ReportWrapper_subTitleBar {
+  background: $GALLERY;
+  border-left: solid 1px $SCORPION;
+  border-right: solid 1px $SCORPION;
+  min-height: 20px;
+  padding: 4px 15px;
+  position: relative;
+  overflow: auto;
+}
+
+.ReportWrapper_subTitleLeft {
+  float: left;
+  width: 50%;
+}
+
+.ReportWrapper_subTitleRight {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.ReportWrapper_subTitleIcon {
+  width: 16px;
+  height: 16px;
+  fill: $SCORPION;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
+.ReportWrapper_subTitleBtn {
+  @include LinkButton;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: $SCORPION;
+  margin: 0 10px;
+
+  &:hover {
+    .ReportWrapper_subTitleIcon {
+      fill: $AMARANTH;
+    }
+  }
+}
+
+.ReportWrapper_deleteAlert {
+  position: absolute;
+  width: 200px;
+  top: -35px;
+  right: 160px;
+  z-index: 200;
+  display: none;
+}
+
+.ReportWrapper_deleteAlert--show {
+  display: block;
+}
+
+.ReportWrapper_reportBody {
+  border: solid 1px $SCORPION;
+  border-top: none;
+  background: #FFF;
+  padding: 20px;
+}

@@ -1,0 +1,93 @@
+@import '../../styles/_colors';
+
+.SurveyBuilderNav {
+  margin: 0;
+  padding: 0;
+  background: $GALLERY;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveyBuilderNav_navItem,
+.SurveyBuilderNav_actionItem {
+  width: 25%;
+  display: inline-block;
+  padding: 0 2%;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.SurveyBuilderNav_navBtn,
+.SurveyBuilderNav_actionBtn {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: solid 2px transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $AMARANTH;
+    text-decoration: none;
+    color: $AMARANTH;
+
+    .SurveyBuilderNav_navIcon {
+      fill: $AMARANTH;
+    }
+  }
+}
+
+.SurveyBuilderNav_navBtn--selected {
+  border-color: $AMARANTH;
+  text-decoration: none;
+  color: $AMARANTH;
+
+  .SurveyBuilderNav_navIcon {
+    fill: $AMARANTH;
+  }
+}
+
+.SurveyBuilderNav_navIcon,
+.SurveyBuilderNav_actionIcon {
+  width: 24px;
+  height: 24px;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+  fill: $CURIOUS_BLUE;
+}
+
+/* --- */
+
+.SurveyBuilderNav_actionItem {
+  text-align: right;
+}
+
+.SurveyBuilderNav_actionBtn {
+  background: $CURIOUS_BLUE;
+  padding: 5px 10px;
+  font-size: 1.05rem;
+  color: #FFF;
+
+  &:hover {
+    color: #FFF;
+    border-color: transparent;
+    background: $PISTACHIO;
+  }
+}
+
+.SurveyBuilderNav_actionIcon {
+  fill: #FFF;
+}

@@ -1,0 +1,20 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.UploadPreview {
+
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.UploadPreview_image {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.UploadPreview_disclaimer {
+  font-size: 0.7rem;
+  color: $AMARANTH;
+  font-style: italic;
+}

@@ -1,0 +1,74 @@
+@import '../../styles/_colors';
+
+.AppHeader {
+  display: table-row;
+  height: 1px;
+  background: #FFF;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.AppHeader_stripe {
+  height: 3px;
+  background: $AMARANTH;
+}
+
+.AppHeader_content {
+  padding: 5px 20px;
+  border-bottom: solid 1px $ALTO;
+}
+
+.AppHeader_branding {
+  width: 40%;
+  display: inline-block;
+}
+
+.AppHeader_actions {
+  width: 60%;
+  display: inline-block;
+  text-align: right;
+}
+
+.AppHeader_title {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 0 0 15px;
+  font-size: 1.2rem;
+  font-family: 'EnzoOT-Light';
+  color: $BOULDER;
+  position: relative;
+}
+
+.AppHeader_version {
+  color: $SILVER;
+  margin-left: 5px;
+  font-size: 0.6rem;
+  font-family: 'EnzoOT-Medi';
+}
+
+.AppHeader_actions {
+  vertical-align: middle;
+  min-height: 35px;
+}
+
+.AppHeader_actionItem {
+  margin-left: 10px;
+  padding: 10px;
+  min-height: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  color: $BOULDER;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+
+  &:hover, &:focus {
+    color: $CURIOUS_BLUE;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

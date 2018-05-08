@@ -1,0 +1,78 @@
+@import '../../styles/_colors';
+
+.PageHeader {
+  margin-bottom: 10px;
+  position: relative;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.PageHeader_icon {
+  width: 22px;
+  height: 22px;
+  fill: $SCORPION;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.PageHeader_title {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.PageHeader_actions {
+  float: right;
+}
+
+.PageHeader_actionBtn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.PageHeader_actionIcon {
+  width: 16px;
+  height: 16px;
+  fill: $SCORPION;
+
+  &:hover {
+    fill: $CURIOUS_BLUE;
+  }
+}
+
+.PageHeader_deleteAlert {
+  width: 240px;
+  top: -15px;
+  right: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.PageHeader_deleteAlert--show {
+  visibility: visible;
+  opacity: 1;
+  right: 30px;
+}
+
+.PageHeader_logicAlert {
+  width: 240px;
+  top: -15px;
+  right: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  color: $AMARANTH;
+}
+
+.PageHeader_logicAlert--show {
+  visibility: visible;
+  opacity: 1;
+  right: 30px;
+}

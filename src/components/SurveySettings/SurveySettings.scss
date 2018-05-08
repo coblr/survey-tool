@@ -1,0 +1,107 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.SurveySettings {
+  border: solid 1px $SILVER;
+  padding: 20px 20px 20px 70px;
+  margin-bottom: 40px;
+  position: relative;
+  color: $SCORPION;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.SurveySettings_header {
+  border-bottom: solid 1px $SILVER;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.SurveySettings_headerIcon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  fill: $CURIOUS_BLUE;
+}
+
+.SurveySettings_title {
+  margin: 0;
+  padding: 0 0 10px;
+  font-size: 1.7rem;
+  font-family: 'EnzoOT-Light', Sans-serif;
+}
+
+.SurveySettings_disclaimer {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.SurveySettings_label {
+  display: block;
+  font-weight: 700;
+}
+
+.SurveySettings_small {
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.SurveySettings_instructions {
+  width: 45%;
+  color: $BOULDER;
+  font-size: 0.8rem;
+}
+
+.SurveySettings_fieldWrapper {
+  margin-top: 40px;
+}
+
+.SurveySettings_titleField,
+.SurveySettings_footerField {
+  width: 45%;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.SurveySettings_textarea {
+  width: 100%;
+  min-height: 100px;
+  border: solid 1px $SILVER;
+}
+
+.SurveySettings_checkbox {
+  margin-right: 10px !important; /* override bootstrap  */
+}
+
+.SurveySettings_footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.SurveySettings_saveBtn {
+  @include FormButton
+  border: none;
+  background: $PISTACHIO;
+  color: #FFF;
+  padding: 10px 20px;
+
+  &:hover {
+    background: $CURIOUS_BLUE;
+  }
+}
+
+.SurveySettings_saveIcon {
+  width: 24px;
+  height: 24px;
+  fill: #FFF;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+
+}

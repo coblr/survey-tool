@@ -1,0 +1,12 @@
+@import '../../styles/_colors';
+
+.NotAvailable {
+  font-size: 1rem;
+  color: $AMARANTH;
+  font-weight: 300;
+  text-align: center;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}

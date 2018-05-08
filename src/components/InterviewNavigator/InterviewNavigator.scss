@@ -1,0 +1,55 @@
+@import '../../styles/_colors';
+
+.InterviewNavigator {
+  font-size: 0.9rem;
+  color: #FFF;
+  margin-top: 3px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.InterviewNavigator_backBtn {
+  color: #FFF;
+  margin-right: 10px;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $CURIOUS_BLUE;
+    text-decoration: none;
+
+    .InterviewNavigator_icon {
+      fill: $CURIOUS_BLUE;
+    }
+  }
+}
+
+.InterviewNavigator_icon {
+  width: 16px;
+  height: 16px;
+  fill: #FFF;
+  margin: 0 5px;
+  vertical-align: text-top;
+}
+
+.InterviewNavigator_counter {
+  margin: 0 10px;
+  font-size: 0.7rem;
+}
+
+.InterviewNavigator_navBtn {
+
+}
+
+.InterviewNavigator_navIcon {
+  width: 18px;
+  height: 18px;
+  fill: #FFF;
+  margin: 0 5px;
+  vertical-align: text-bottom;
+
+  &:hover {
+    fill: $CURIOUS_BLUE;
+  }
+}

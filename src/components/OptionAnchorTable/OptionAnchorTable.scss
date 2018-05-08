@@ -1,0 +1,41 @@
+@import '../../styles/_colors';
+
+.OptionAnchorTable {
+  border: solid 1px $SILVER;
+  width: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.OptionAnchorTable_optionColHeader,
+.OptionAnchorTable_toggleColHeader {
+  background: $SCORPION;
+  color: #FFF;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.OptionAnchorTable_toggleColHeader {
+  width: 25%;
+  text-align: center;
+  border-left: solid 1px $SILVER;
+}
+
+.OptionAnchorTable_optionRow {
+  background: #FFF;
+  border-bottom: solid 1px $SILVER;
+}
+
+.OptionAnchorTable_optionCell,
+.OptionAnchorTable_toggleCell {
+  padding: 5px 10px;
+}
+
+.OptionAnchorTable_toggleCell {
+  text-align: center;
+  vertical-align: top;
+}

@@ -1,0 +1,22 @@
+@import '../../styles/_colors';
+@import '../../styles/_typography';
+
+.PromoteOnline {
+  padding: 40px;
+  color: $SCORPION;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.PromoteOnline_title {
+  margin: 0 0 10px;
+  padding: 0;
+  font-weight: 900;
+  text-align: center;
+}
+
+.PromoteOnline_instruction {
+  text-align: center;
+}

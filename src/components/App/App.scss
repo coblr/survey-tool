@@ -1,0 +1,27 @@
+@import '../../styles/_colors';
+
+.App {
+  display: table;
+  width: 100%;
+  height: 100%;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+.App_body {
+  display: table-row;
+  width: 100%;
+  height: 100%;
+  content: '';
+  padding-bottom: 40px;
+  transition: background 0.2s;
+}
+
+.App_intro {
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: #eee;
+}

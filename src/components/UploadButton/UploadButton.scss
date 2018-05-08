@@ -1,0 +1,31 @@
+@import '../../styles/_colors';
+
+.UploadButton {
+  position: relative;
+  background: $CURIOUS_BLUE;
+  color: #FFF;
+  padding: 10px 20px;
+
+  &[style] {
+    visibility: visible !important;
+  }
+}
+
+/* the input is invisible OVER the prompt */
+.UploadButton_input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.UploadButton_uploadIcon {
+  width: 16px;
+  height: 16px;
+  fill: #FFF;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
